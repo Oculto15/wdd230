@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: rgb(124, 120, 120);
+}
+
+form{
+    max-width: 320px;
+    margin: 0 auto;
+    padding: 1em;
+}
+
+form label, form input{
+    display: block;
+    width: 100%;
+}
+
+form input{
+    margin-bottom: 1em;
+    padding: 0.75em;
+}
+
+label input{
+    display: inline;
+    width: auto;
+}
+
+form label.required::after{
+    content: " *";
+    color: red;
+}
+
+input:invalid{
+    box-shadow: 0 0 2px 1px red;
+}
+
+/* .reqired:empty{
+    box-shadow: none;
+} */

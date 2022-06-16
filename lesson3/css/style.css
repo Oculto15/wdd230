@@ -1,0 +1,192 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+    min-height: 100vh;
+    overflow-x: hidden;
+    background: linear-gradient(#161c55, #9daac2);
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}
+
+header{
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;  
+    align-items: center;
+}
+header h1{
+    color: white;
+}
+header ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header ul li{
+    list-style: none;
+}
+
+header ul li a{
+    text-decoration: none;
+    padding: 6px 15px;
+    color: #fff;
+    border-radius: 20px;
+}
+
+header .flex ul li a:hover, header .flex ul li a.active {
+    background: #fff;
+    color: #2b1055;
+}
+
+/* Target Audience */
+
+main .heading{
+    color: #fff;
+    padding: 40px 0 0 50px;
+    font-size: 40px;
+    text-align: center;
+}
+
+main .target{
+    color: #fff;
+    padding: 30px 0 10px 100px;
+}
+
+main .list{
+    padding: 10px 100px 10px 130px;
+    color: #fff;
+}
+
+main .inf{
+    padding: 0 130px 50px 130px;
+    color: #fff;
+}
+
+main .text{
+    color: #fff;
+    padding: 10px 100px 10px 100px;
+}
+
+main .img{
+    display: block;
+    margin-left: 77px;
+    margin-bottom: 20px;
+}
+
+/* Table  */
+main table, th, td {
+    border:1px solid #fff;
+    color: #fff;
+    text-align: center;
+}
+
+main table th{
+    padding: 10px;
+}
+main table td{
+    font-family: 'Roboto Flex', sans-serif;
+    padding: 10px;
+}
+
+main .title{
+    text-align: center;
+    padding: 40px 0 60px 0;
+    color: #fff;
+}
+
+main table{
+    width:50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 100px;
+}
+
+main table tr .color1{
+    background: white;
+}
+
+/* Color Scheme */
+main table tr .color2{
+    background: linear-gradient(#161c55, #325ca9);
+}
+
+main table tr .color3{
+    background: linear-gradient(#eb8715, #e1a91a);
+}
+
+main table tr .color4{
+    background: linear-gradient(#f8e918, #f8dc03);
+}
+
+main table tr .color5{
+    background: linear-gradient(#2a0a5c, #842bd6);
+}
+
+main table tr .color6{
+    background: linear-gradient(rgb(205, 197, 197), #dce4dc);
+}
+
+main table tr .color7{
+    background: rgb(17, 69, 120);
+}
+
+main table tr .color8{
+    background: black;
+}
+
+/* Footer */
+
+footer{
+    color: #fff;
+    padding: 20px;
+    background-color: #161c55;
+}
+
+footer p{
+    text-align: center;
+}
+
+
+@media screen and (max-width: 900px) {
+    .flex ul{
+        display: flex;
+        flex-direction: column;
+        list-style-type: none;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .flex ul li{
+        padding: 10px;
+    }
+    main{
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        display: block;
+    }
+
+    header{
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    header{
+        flex-direction: column;
+    }
+}
+
+
+
+
+

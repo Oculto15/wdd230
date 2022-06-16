@@ -1,0 +1,73 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+header{
+    text-align: center;
+    background-color: rgb(70, 76, 94);
+    padding: 20px;
+    color: white;
+}
+
+main{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 50px 0 50px 0;
+    align-items: center;
+    justify-items: center;
+}
+
+.card{
+    max-width: 400px;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin: 20px;
+    background-color: rgb(210, 215, 214);
+    height: 1100px;
+}
+
+main .card .title{
+    padding: 10px;
+    background-color: rgb(82, 95, 106);
+    border-radius: 10px 10px 0 0;
+    color: white;
+}
+
+.img {
+    display: flex;
+    justify-content: center;
+}
+
+main .card p, ul li{
+    padding: 10px;
+    list-style: none;
+    text-decoration: none;
+}
+
+main .card ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+footer{
+    text-align: center;
+    background-color: rgb(70, 76, 94);
+    padding: 20px;
+    color: white;
+}
+
+@media screen and (max-width: 1250px) {
+    main {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+
+@media screen and (max-width: 850px) {
+  main {
+    grid-template-columns: 1fr;
+  }
+}
+

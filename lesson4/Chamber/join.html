@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Put your description here.">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Oswald:700/Poppins" rel="stylesheet">
+    <link rel="shortcut icon" href="images/icon_edb7a62a928a71370e2b4f23bcb2334f.ico">
+    <link rel="apple-touch-icon" href="/example.png">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/join.css">
+</head>
+
+<body>
+    <header>
+        <div class="pops">
+            <span id="message"></span>
+        </div>
+        <div class="conteiner">
+            <div class="space">
+                <div class="mid">
+                    <nav>
+                        <ul class="navigation">
+                            <li><a class="ham" href="#"></a></li>
+                            <li><a class="menu_nav" href="index.html">Home</a></li>
+                            <li><a class="menu_nav" href="#">Chamber</a></li>
+                            <li><a class="menu_nav" href="discover.html">Discover</a></li>
+                            <li><a class="menu_nav" href="#">Log In</a></li>
+                            <li><a href="#">More
+                                    <img alt=""
+                                        src="//cdn2.editmysite.com/images/landing-pages/global/shared/navbar/carrot.svg"
+                                        width="15" height="7">
+                                </a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div class="logo">
+                <img src="images/logo-blue.png" alt="" width="149" height="67">
+            </div>
+            <div class="nav-grid space">
+                <div class="header-social">
+                    <a href="https://facebook.com" target="_blank"><i class="fa-brands fa-facebook-f icon"></i></a>
+                    <a href="https://instagram.com" target="_blank"><i class="fa-brands fa-instagram icon"></i></a>
+                    <a href="https://linkedin.com" target="_blank"><i class="fa-brands fa-linkedin-in icon"></i></a>
+                </div>
+                <div class="rest navigation2">
+                    <a href="join.html" id="button_nav">Sign up</a>
+                </div>
+            </div>
+        </div>
+        <aside></aside>
+    </header>
+
+
+    <main>
+        <h1>Welcome to Las Condes Chamber</h1>
+        <form class="container" method="get" action="thankyou.html">
+            <div class="inputs">
+                <input type="text" name="firstname" id="firstname" required>
+                <label for="firstname" class="required">First Name</label>
+            </div>
+
+            <div class="inputs">
+                <input type="text" name="middlename" id="middlename" placeholder=" " required>
+                <label for="middlename">Middle Name</label>
+            </div>
+
+            <div class="inputs">
+                <input type="text" name="firstname" id="lastname" required>
+                <label for="lastname" class="required">Last Name</label>
+            </div>
+
+            <div class="inputs">
+                <input type="text" name="business-position" id="business-position" pattern="\D{7,}" placeholder=" " required>
+                <label for="business-position">Business position title field</label>
+            </div>
+
+            <div class="inputs">
+                <input type="email" name="email" id="email" required>
+                <label for="email" class="required">Email (example@email.com)</label>
+            </div>
+
+            <div class="inputs">
+                <input type="tel" name="phone" id="phone" pattern="\d{3}-\d{3}-\d{4}"  required>
+                <label for="phone" class="required">Phone number (555-555-5555):</label>
+            </div>
+
+            <div class="inputs">
+                <input type="text" name="business-title" id="business-title" required>
+                <label for="business-title" class="required">Business Title</label>
+            </div>
+
+            <div class="side">Membership level?
+                <label>
+                    <input type="radio" name="status" value="np">
+                    NP Membership
+                </label>
+                <label>
+                    <input type="radio" name="status" value="bronze">
+                    Bronze Membership.
+                </label>
+                <label>
+                    <input type="radio" name="status" value="silver">
+                    Silver Membership
+                </label>
+                <label>
+
+                    <input type="radio" name="status" value="gold">
+                    Gold Membership
+                </label>
+            </div>
+            
+                <label class="description" for="w3review">Business description:</label>
+                <textarea id="w3review" name="w3review" rows="4" cols="50"></textarea>
+                <br>
+
+                <input type="hidden" name="visit-date" id="visit-date" value="0">
+               
+
+                <input type="submit" value="Submit" id="myBtn">
+        </form>
+    </main>
+
+    <footer>
+        <div class="footer-div">
+            <div class="section-content">
+                <ul>
+                    <li class="footer"><a href="index.html">Home</a></li>
+                    <li class="footer"><a href="courses.html">Chamber</a></li>
+                    <li class="footer"><a href="contact-us.html">Contact Us</a></li>
+                </ul>
+                <div class="logo-footer">
+                    <img src="images/logo-blue.png" alt="" width="149" height="67">
+                </div>
+                <div class="social">
+                    <a href="https://facebook.com" target="_blank"><i class="fa-brands fa-facebook-f icon"></i></a>
+                    <a href="https://instagram.com" target="_blank"><i class="fa-brands fa-instagram icon"></i></a>
+                    <a href="https://linkedin.com" target="_blank"><i class="fa-brands fa-linkedin-in icon"></i></a>
+                </div>
+                <span class="section-divide"></span>
+                <div class="footer__copyright">
+                    <p class="line">&copy; <span id="year"></span> | Ignacio N. Villar | WDD 230 Project | Last
+                        modified: <span id="lastmod"></span></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>

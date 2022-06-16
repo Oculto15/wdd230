@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Input Animation</title>
+</head>
+<body>
+
+    <form class="container">
+        <div class="inputs">
+            <input type="text" name="firstname" id="firstname" required>
+            <label for="firstname" class="required">First Name</label>
+        </div>
+
+        <div class="inputs">
+            <input type="text" name="middlename" id="middlename" required="false">
+            <label for="middlename">Middle Name</label>
+        </div>
+
+        <div class="inputs">
+            <input type="text" name="firstname" id="lastname" required>
+            <label for="lastname" class="required">Last Name</label>
+        </div>
+
+        <div class="inputs">
+            <input type="text" name="business-position" id="business-position" pattern="\D{7,}" required="false">
+            <label for="business-position">Business position title field</label>
+        </div>
+
+        <div class="inputs">
+            <input type="email" name="email" id="email"  required>
+            <label for="email" class="required">Email (example@email.com)</label>
+        </div>
+
+        <div class="inputs">
+            <input type="tel" name="phone" id="phone" pattern="\d{3}-\d{3}-\d{4}" required>
+            <label for="phone" class="required">Phone number (555-555-5555):</label>
+        </div>
+
+        <div class="inputs">
+            <input type="text" name="business-title" id="business-title" required>
+            <label for="business-title" class="required">Business Title</label>
+        </div>
+
+        <label>Membership level?</label>
+            <label>
+                <input type="radio" name="status" value="np">
+                NP Membership
+            </label>
+            <label>
+                <input type="radio" name="status" value="bronze">
+                Bronze Membership.
+            </label>
+            <label>
+                <input type="radio" name="status" value="silver">
+                Silver Membership
+            </label>
+            <label>
+                
+                <input type="radio" name="status" value="gold">
+                Gold Membership
+        </label>
+        
+        <label class="description" for="w3review">Business description:</label>
+            <textarea id="w3review" name="w3review" rows="4" cols="50"></textarea>
+            <br>
+    
+
+        <input type="submit" value="Submit" id="myBtn">
+    </form>
+    <script src="script.js"></script>
+</body>
+</html>
+
+
