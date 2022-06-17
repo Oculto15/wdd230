@@ -76,7 +76,8 @@
             </div>
 
             <div class="inputs">
-                <input type="text" name="business-position" id="business-position" pattern="\D{7,}" placeholder=" " required>
+                <input type="text" name="business-position" id="business-position" pattern="\D{7,}" placeholder=" "
+                    required>
                 <label for="business-position">Business position title field</label>
             </div>
 
@@ -86,7 +87,7 @@
             </div>
 
             <div class="inputs">
-                <input type="tel" name="phone" id="phone" pattern="\d{3}-\d{3}-\d{4}"  required>
+                <input type="tel" name="phone" id="phone" pattern="\d{3}-\d{3}-\d{4}" required>
                 <label for="phone" class="required">Phone number (555-555-5555):</label>
             </div>
 
@@ -97,32 +98,58 @@
 
             <div class="side">Membership level?
                 <label>
-                    <input type="radio" name="status" value="np">
+                    <input type="radio" id="np"  name="status" value="1">
                     NP Membership
+
                 </label>
                 <label>
-                    <input type="radio" name="status" value="bronze">
-                    Bronze Membership.
+                    <input type="radio" id="bronze" name="status" value="2">
+                    Bronze Membership
+
                 </label>
                 <label>
-                    <input type="radio" name="status" value="silver">
+                    <input type="radio" id="silver"  name="status" value="3">
                     Silver Membership
+
                 </label>
                 <label>
 
-                    <input type="radio" name="status" value="gold">
+                    <input type="radio" id="gold"  name="status" value="4">
                     Gold Membership
+
                 </label>
-            </div>
-            
-                <label class="description" for="w3review">Business description:</label>
-                <textarea id="w3review" name="w3review" rows="4" cols="50"></textarea>
                 <br>
+                <div id="group1">
+                    <div id="benefits">
+                        <p class="member1">Free subscription <br>No benefits</p>
+                    </div>
+                    <div id="benefits2">
+                        <p class="member2">Free subscription <br>$50</p>
+                    </div>
+                    <div id="benefits3">
+                        <p class="member3">Free subscription <br>$100</p>
+                    </div>
+                    <div id="benefits4">
+                        <p class="member4">Free subscription <br>$150</p>
+                    </div>
+                </div>
 
-                <input type="hidden" name="visit-date" id="visit-date" value="0">
-               
 
-                <input type="submit" value="Submit" id="myBtn">
+              
+
+
+
+
+            </div>
+
+            <label class="description" for="w3review">Business description:</label>
+            <textarea id="w3review" name="w3review" rows="4" cols="50"></textarea>
+            <br>
+
+            <input type="hidden" name="visit-date" id="visit-date" value="0">
+
+
+            <input type="submit" value="Submit" id="myBtn">
         </form>
     </main>
 
@@ -151,7 +178,7 @@
         </div>
     </footer>
     <script src="js/script.js"></script>
-
+    <script src="js/join.js"></script>
 </body>
 
 </html>

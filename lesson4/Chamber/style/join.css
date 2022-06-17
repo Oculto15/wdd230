@@ -90,3 +90,37 @@ form label.required::after {
   content: " *";
   color: crimson;
 }
+
+#benefits,
+#benefits2,
+#benefits3,
+#benefits4 {
+  display: none;
+}
+
+.member1 {
+  color: black;
+  padding: 10px 0;
+}
+
+.member2 {
+  border-radius: 10px;
+  background-color: #CD7F32;
+  color: black;
+  padding: 10px 0;
+}
+
+.member3 {
+  border-radius: 10px;
+  background-color: silver;
+  color: black;
+  padding: 10px 0;
+}
+
+.member4 {
+  border-radius: 10px;
+  background-color: #E0CD67;
+  color: black;
+  padding: 10px 0;
+}
+
