@@ -1,6 +1,6 @@
 
 const directoryCard = document.querySelector(".cards-conteiner");
-const jsonURL = "../json/data.json";
+const jsonURL = "https://oculto15.github.io/wdd230/lesson4/Chamber/json/data.json";
 
 fetch(jsonURL)
   .then((response) => response.json())
