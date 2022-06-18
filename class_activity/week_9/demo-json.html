@@ -23,15 +23,18 @@
                     const p2 = document.createElement('p');
                     const p3 = document.createElement('p');
                     const p4 = document.createElement('p');
+
                     p1.textContent = `Hometown: ${data.homeTown}`;
                     p2.textContent = `Date Formed: ${data["formed"]}`;
                     p3.textContent = `Secret Base: ${data["secretBase"]}`;
                     p4.textContent = `Active: ${(data["active"]) ? "Yes" : "No"}`;
+
                     resultElement.appendChild(h1);
                     resultElement.appendChild(p1);
                     resultElement.appendChild(p2);
                     resultElement.appendChild(p3);
                     resultElement.appendChild(p4);
+                    
                     const section = document.createElement('section');
                     const h2 = document.createElement('h2');
                     h2.textContent = "Members";
