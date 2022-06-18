@@ -1,5 +1,6 @@
-const jsonURL = "../json/data.json";
+
 const directoryCard = document.querySelector(".cards-conteiner");
+const jsonURL = "../json/data.json";
 
 fetch(jsonURL)
   .then((response) => response.json())
