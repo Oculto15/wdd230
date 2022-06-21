@@ -84,17 +84,19 @@
                 <div class="sub-division weather">
                     <h2>Weather</h2>
                     <div class="wea-div">
-                        <img src="images/weather.png" width="149" height="67" alt="">
-                        <p class="celcius">55°C</p>
+                        <figure>
+                            <img src="" alt="" id="weather-icon" />
+                        </figure>
+                        <p class="celcius"><span id="current-temp"></span> &deg;C</p>
                     </div>
                     <div class="cloudy">
                         <span></span>
-                        <h3>Partly Cloudy</h3>
+                        <h3><figcaption></figcaption></h3>
                     </div>
                     <span class="weather-divide"></span>
                     <div class="speed">
                         <p>Wind Speed</p>
-                        <p class="speedkmh">6.5 km/h</p>
+                        <p class="speedkmh"><span id="current-wind"></span> &deg; km/h</p>
                     </div>
                     <div class="chill">
                         <p>Wind Chill</p>
@@ -138,7 +140,7 @@
                 <p>Discover how to join the chamber of commerce and how it will benefit your organization!</p>
             </div>
         </div>
-
+        <input type="hidden" name="visit-date" id="visit-date" value="0">
     </main>
 
     <footer>
@@ -166,7 +168,7 @@
         </div>
     </footer>
     <script src="js/script.js"></script>
-    <script src="js/windchill.js"></script>
+    <script src="js/weather.js"></script>
 </body>
 
 </html>
