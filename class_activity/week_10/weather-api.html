@@ -1,20 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Weather API</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather API</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-    <h1>OpenWeatherMap.org API Test</h1>
-<p>The current temperature in Fairbanks, Alaska is <span id="current-temp"></span> &deg;F</p>
-<h2>Current Condition Icon</h2>
-<figure>
-  <img src="" alt="" id="weather-icon" />
-  <figcaption></figcaption>
-</figure>
+  <main>
+
+    <p id="title">Weather API Test</p>
+    <p class="time"><span id="time"></span>
+    <p>
+    <p><span id="day"></span></p>
+    <h3><span id="place"></span></h3>
     
-<script src="js/weatherapi.js"></script>
+    <div id="conteiner">
+      <div class="div-cont">
+        <p>Humidity</p>
+        <p><span id="humidity"></span></p>
+      </div>
+
+      <div class="div-cont">
+        <p>Pressure</p>
+        <p><span id="pressure"></span></p>
+      </div>
+
+      <div class="div-cont">
+        <p>wind-speed</p>
+        <p><span id="wind-speed"></span></p>
+      </div>
+    </div>
+   
+
+
+    <div id="temperature">
+      <p><span id="week-day"></span></p>
+      <div class="temp-div">
+        <figure>
+          <img src="" alt="" id="weather-icon" />
+        </figure>
+        <p id="temp"><span id="current-temp"></span> &deg;F</p>
+      </div>
+      <figcaption></figcaption>
+    </div>
+  </main>
+
+
+  <script src="js/weatherapi.js"></script>
+
 </body>
+
 </html>
