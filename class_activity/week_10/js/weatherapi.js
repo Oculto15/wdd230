@@ -11,7 +11,7 @@ const showWeekDay = document.querySelector("#week-day")
 const visibility = document.querySelector("#visibility")
 
 const url =
-  "https://api.openweathermap.org/data/2.5/weather?q=Fairbanks&units=imperial&appid=7ab1d10dc93618cf38fe46aa0435107d";
+  "https://api.openweathermap.org/data/2.5/weather?q=Cusco&units=imperial&appid=7ab1d10dc93618cf38fe46aa0435107d";
 
 fetch(url)
   .then((response) => response.json())
