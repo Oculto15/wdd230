@@ -8,6 +8,7 @@ const toDay = document.querySelector("#day")
 const city =  document.querySelector("#place")
 const showTime =  document.querySelector("#time")
 const showWeekDay = document.querySelector("#week-day")
+const visibility = document.querySelector("#visibility")
 
 const url =
   "https://api.openweathermap.org/data/2.5/weather?q=Fairbanks&units=imperial&appid=7ab1d10dc93618cf38fe46aa0435107d";
@@ -20,6 +21,9 @@ fetch(url)
     currentHumidity.innerHTML = `${data.main.humidity.toFixed(0)}`;
     currentPressure.innerHTML = `${data.main.pressure.toFixed(0)}`;
     currentWindSpeed.innerHTML = `${data.wind.speed.toFixed(0)}`;
+    visibility2 = `${data.visibility}`;
+    vis = visibility2/1000;
+    visibility.innerHTML = vis;
     city.innerHTML = `${data.name}`;
 
     const iconsrc = `https://openweathermap.org/img/w/${data.weather[0].icon}.png`;
@@ -28,14 +32,6 @@ fetch(url)
     weatherIcon.setAttribute("src", iconsrc);
     weatherIcon.setAttribute("alt", desc);
     captionDesc.textContent = desc;
-
-    let temp = data.main.temp.toFixed(0);
-    let speed = data.wind.speed.toFixed(0);
-
-    console.log(temp);
-    console.log(speed);
-    console.log(humidity);
-    console.log(pressure);
 
   });
 

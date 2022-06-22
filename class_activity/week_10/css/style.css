@@ -19,7 +19,7 @@ body {
 #title {
     font-weight: 200;
     font-size: 50px;
-    background-color: #00000086;
+    background-color: #0000005e;
     height: 80px;
     border-radius: 10px 10px 0 0;
 }
@@ -60,16 +60,23 @@ h2 {
 
 figcaption {
     padding-bottom: 15px;
+    position:relative;
+    top: -15%;
+    font-weight: 100;
+}
+
+img{
+    width: 70px;
 }
 
 #conteiner {
     border: 1px solid white;
-    width: 200px;
+    width: 220px;
     margin-left: auto;
     margin-right: auto;
     border-radius: 10px;
     padding: 15px;
-    background-color: #00000086;
+    background-color: #0000005e;
     color: white;
     margin-top: 20px;
 }
@@ -81,7 +88,7 @@ figcaption {
 
 #temperature {
     margin-top: 30px;
-    background-color: #00000086;
+    background-color: #0000005e;
     height: 150px;
     border-radius: 0 0 10px 10px;
     padding-top: 25px;
