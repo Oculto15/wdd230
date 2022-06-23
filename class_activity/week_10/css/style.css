@@ -7,7 +7,7 @@
 }
 
 body {
-    background-image: url(/images/beach.webp);
+    background-image: url(../images/beach.webp);
     background-repeat: no-repeat;
     background-size: cover;
     overflow: hidden;
