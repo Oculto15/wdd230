@@ -10,8 +10,15 @@ const showTime =  document.querySelector("#time")
 const showWeekDay = document.querySelector("#week-day")
 const visibility = document.querySelector("#visibility")
 
-const url =
-  "https://api.openweathermap.org/data/2.5/weather?q=Cusco&units=imperial&appid=7ab1d10dc93618cf38fe46aa0435107d";
+
+const city_name = 'Cusco';
+const units = 'imperial';
+const appid = '7ab1d10dc93618cf38fe46aa0435107d'
+const url_link = 'https://api.openweathermap.org/data/2.5/weather?'
+
+const url = `${url_link}q=${city_name}&units=${units}&appid=${appid}`;
+
+// const url = "https://api.openweathermap.org/data/2.5/weather?q=Cusco&units=imperial&appid=7ab1d10dc93618cf38fe46aa0435107d";
 
 fetch(url)
   .then((response) => response.json())
@@ -26,7 +33,7 @@ fetch(url)
     visibility.innerHTML = vis;
     city.innerHTML = `${data.name}`;
 
-    const iconsrc = `https://openweathermap.org/img/w/${data.weather[0].icon}.png`;
+    const iconsrc = `https://openweathermap.org/img/wn/${data.weather[0].icon}@4x.png`;
     const desc = data.weather[0].description;
 
     weatherIcon.setAttribute("src", iconsrc);
