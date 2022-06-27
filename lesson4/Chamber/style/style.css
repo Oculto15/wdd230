@@ -170,8 +170,12 @@ main div .team {
     padding-top: 20px;
 }
 
-main p {
+main .event, .new, .join, .division {
     text-align: center;
+}
+
+.weather-divide span:not() {
+    text-align: center
 }
 
 main .sub-division {
