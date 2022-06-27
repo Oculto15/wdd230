@@ -258,7 +258,7 @@ main .chamber {
     background: rgba(24,24,27,0.8);
     color:white;
     width: 347.5px;
-    margin: 5px;
+    /* margin: 5px 5px 0px 5px; */
 }
 
 .today{
