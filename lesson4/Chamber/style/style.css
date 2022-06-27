@@ -247,18 +247,122 @@ main .chamber {
     color: #0d07eebf;
 }
 
-.weather h2 {
+/* .weather h2 {
     text-align: center;
     padding-top: 10px;
-}
+} */
 
-.weather img {
+/* .weather img {
     object-fit: cover;
-}
+} */
 
 .wea-div {
     display: flex;
     justify-content: space-around;
+}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;700&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+
+
+body{
+    background-repeat: no-repeat;
+    background-size:cover;
+    /* overflow:hidden; */
+    height: 100vh;
+    font-family: 'Poppins', sans-serif;
+}
+
+.weather-divide{
+    background: rgba(24,24,27,0.8);
+    color:white;
+    width: 350px;
+}
+
+.today{
+    min-width:300px;
+    margin-right: 15px;
+}
+
+.day-title{
+    font-weight: 100;
+    font-size: 20px;
+}
+
+.weather-title{
+    font-size:25px;
+    padding-top:10px;
+    text-align: center;
+}
+
+.future-forecast{
+    padding: 25px;
+    display: flex;
+    color:white;
+    align-items: center;
+    overflow-y: hidden;
+}
+
+.future-forecast .today{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #eee;
+    border-radius: 10px;
+    padding:15px;
+    border-radius: 10px;
+    background: rgba(0,0,0,0.2)
+}
+
+.future-forecast .today .day{
+    padding: 5px 15px;
+    background: #3c3c44;
+    border-radius: 50px;
+    text-align: center;
+}
+
+.future-forecast .today .temp{
+    font-size: 18px;
+    padding-top: 15px;
+}
+
+.future-forecast .weather-forecast{
+    display: flex;
+}
+
+img{
+    width: 100px
+}
+
+.weather-forecast .weather-forecast-item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 10px;
+    border: 1px solid #eee;
+    padding: 15px;
+    border-radius: 10px;
+    background: rgba(0,0,0,0.2)
+}
+
+.weather-forecast .weather-forecast-item .day{
+    padding: 5px 15px;
+    background: #3C3C44;
+    border-radius: 50px;
+    text-align: center;
+}
+
+.weather-forecast .weather-forecast-item .temp{
+    font-weight: 100;
+    font-size: 12px;
+}
+
+.weather-forecast-item{
+    min-width:190px;
 }
 
 .celcius {
@@ -266,18 +370,20 @@ main .chamber {
     font-size: 30px;
 }
 
-.weather-divide {
+
+
+/* .weather-divide {
     display: block;
     height: 1px;
     margin: 0.5rem;
     background-color: #191919;
     opacity: 0.2;
-}
+} */
 
-.weather h3 {
+/* .weather h3 {
     padding: 5px 45px 0 0;
     text-align: end;
-}
+} */
 
 .speed {
     display: flex;
@@ -604,6 +710,16 @@ footer a:hover {
         padding: 10px 10px 0 10px;
     }
 
+    .future-forecast{
+        justify-content: start;
+        align-items: none;
+        overflow-y: scroll;
+    }
+
+    .future-forecast .today .temp{
+        font-size: 16px;
+    }
+
 }
 
 
@@ -666,6 +782,7 @@ footer a:hover {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
         margin: 0 5px 5px 5px;
+        grid-template-rows: repeat(3, 240px);
     }
 
     main .main-division .division {
@@ -783,4 +900,10 @@ footer a:hover {
         grid-column: 2/3;
         grid-row: 1/2;
      }
+
+     .future-forecast{
+        justify-content: start;
+        align-items: none;
+        overflow-x: scroll;
+    }
 }

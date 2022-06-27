@@ -81,27 +81,55 @@
                     <a href="#">more info...</a>
 
                 </div>
-                <div class="sub-division weather">
-                    <h2>Weather</h2>
-                    <div class="wea-div">
-                        <figure>
-                            <img src="" alt="" id="weather-icon" />
-                        </figure>
-                        <p class="celcius"><span id="current-temp"></span> &deg;C</p>
-                    </div>
-                    <div class="cloudy">
-                        <span></span>
-                        <h3><figcaption></figcaption></h3>
-                    </div>
-                    <span class="weather-divide"></span>
-                    <div class="speed">
-                        <p>Wind Speed</p>
-                        <p class="speedkmh"><span id="current-wind"></span> &deg; km/h</p>
-                    </div>
-                    <div class="chill">
-                        <p>Wind Chill</p>
-                        <p class="windchill"></p>
-                    </div>
+                <div class="weather-divide weather">
+                    <p class="weather-title">Weather</p>
+                    <div class="future-forecast">
+                        <div class="today">
+                            <div class="icon-division">
+                                <img src="" alt="" id="weather-icon1">
+                                <h3><figcaption></figcaption></h3>
+                            </div>
+                            <div class="other">
+                                <p class="day1 day-title"></p>
+                                <p id="temp"><span id="current-temp1"></span> &deg;F</p>
+                                <p>Humidity <span id="humidity1"></span> %</p>
+                                <p>Wind Speed <span id="wind-speed1"></span> m/s</p>
+                                <p>Wind Chill <span class="windchill1"></span> </p>
+                            </div>
+                        </div>
+                    
+                        <div class="weather-forecast" id="weather-forecast">
+                            <div class="weather-forecast-item">
+                                <div class="day2 day-title"></div>
+                                <img src="" alt="" id="weather-icon2">
+                                <p id="temp"><span id="current-temp2"></span> &deg;F</p>
+                                <p>Wind Speed <span id="wind-speed2"></span> m/s</p>
+                                <p>Wind Chill <span class="windchill2"></span> </p>
+                            </div>
+                            <div class="weather-forecast-item">
+                                <div class="day3 day-title"></div>
+                                <img src="" alt="" id="weather-icon3">
+                                <p id="temp"><span id="current-temp3"></span> &deg;F</p>
+                                <p>Wind Speed <span id="wind-speed3"></span> m/s</p>
+                                <p>Wind Chill <span class="windchill3"></span> </p>
+                            </div>
+                            <div class="weather-forecast-item">
+                                <div class="day4 day-title"></div>
+                                <img src="" alt="" id="weather-icon4">
+                                <p id="temp"><span id="current-temp4"></span> &deg;F</p>
+                                <p>Wind Speed <span id="wind-speed4"></span> m/s</p>
+                                <p>Wind Chill <span class="windchill4"></span> </p>
+                            </div>
+                            <div class="weather-forecast-item">
+                                <div class="day5 day-title"></div>
+                                <img src="" alt="" id="weather-icon5">
+                                <p id="temp"><span id="current-temp5"></span> &deg;F</p>
+                                <p>Wind Speed <span id="wind-speed5"></span> m/s</p>
+                                <p>Wind Chill <span class="windchill5"></span> </p>
+                            </div>
+                    
+                        </div>
+                    </div> 
                 </div>
             </div>
             <div class="sub-division new">
@@ -168,7 +196,8 @@
         </div>
     </footer>
     <script src="js/script.js"></script>
-    <script src="js/weather.js"></script>
+    <!-- <script src="js/weather.js"></script> -->
+    <script src="js/forecast.js"></script>
 </body>
 
 </html>
