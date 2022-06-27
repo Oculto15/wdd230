@@ -262,7 +262,7 @@ main .chamber {
     background: rgba(24,24,27,0.8);
     color:white;
     width: 347.5px;
-    /* margin: 5px 5px 0px 5px; */
+    margin: 5px;
 }
 
 .today{
@@ -282,7 +282,7 @@ main .chamber {
 }
 
 .future-forecast{
-    padding: 25px;
+    padding: 10px;
     display: flex;
     color:white;
     align-items: center;
@@ -351,21 +351,6 @@ img{
     align-items: center;
     font-size: 30px;
 }
-
-
-
-/* .weather-divide {
-    display: block;
-    height: 1px;
-    margin: 0.5rem;
-    background-color: #191919;
-    opacity: 0.2;
-} */
-
-/* .weather h3 {
-    padding: 5px 45px 0 0;
-    text-align: end;
-} */
 
 .speed {
     display: flex;
@@ -595,6 +580,17 @@ footer a:hover {
     left: 50.3%;
     transform: translateX(-50%);
     top: 8px;
+}
+@media only screen and (min-width: 375px) {
+    .weather-divide{
+        width: 365px;
+    }
+}
+
+@media only screen and (min-width: 425px) {
+    .weather-divide{
+        width: 415px;
+    }
 }
 
 @media only screen and (min-width: 630px) {
