@@ -3,6 +3,8 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
+    color: #fff;
+    font-weight:100 ;
 }
 
 body {
@@ -11,8 +13,10 @@ body {
     grid-template-rows: auto 1fr auto;
     background-repeat: no-repeat;
     background-size:cover;
-  
+    background-color: rgba(79, 79, 85, 0.8);
+   
     height: 100vh;
+    
 }
 
 header .conteiner {
@@ -20,14 +24,14 @@ header .conteiner {
     margin: 0 auto;
     position: relative;
     justify-content: space-between;
-    background-color: #f5f5f5;
+    background-color: rgba(24,24,27,0.8);
     height: 100px;
 }
 
 aside {
     border-radius: 5px;
     text-align: center;
-    color: #2F3337;
+    color: white;
     padding-top: 25px;
 }
 
@@ -82,7 +86,7 @@ aside {
 
 .navigation a:hover {
     color: white;
-    background-color: #878c92;
+    background-color: black;
     border-radius: 100px;
 }
 
@@ -91,14 +95,14 @@ aside {
     padding: 10px;
     text-align: left;
     text-decoration: none;
-    color: #2F3337;
+    color: white;
     font-size: clamp(1rem, 2vmin, 1.5rem);
 }
 
 #button_nav {
-    border: 1px solid #0d2865c9;
+    border: 1px solid white;
     border-radius: 4px;
-    color: #0d2865c9;
+    color: white;
     height: 40px;
     width: 123px;
     display: flex;
@@ -113,7 +117,7 @@ aside {
     padding: 0.75rem;
     text-align: left;
     text-decoration: none;
-    color: #2F3337;
+    color: white;
     transition: 0.5s;
 
 }
@@ -122,7 +126,7 @@ aside {
     align-items: center;
     display: inline-block;
     font-size: 18px;
-    color: #2F3337;
+    color: white;
     text-align: right;
     text-decoration: none;
 
@@ -141,7 +145,7 @@ aside {
 }
 
 .pops {
-    background-color: #f5f5f5;
+    background-color: rgba(24,24,27,0.8);
     overflow: hidden;
 }
 
@@ -189,7 +193,6 @@ figcaption{
 }
 
 main .sub-division {
-    background-color: #f5f5f5;
     margin: 5px;
 }
 
@@ -199,7 +202,7 @@ main .join {
 
 main .division {
     display: grid;
-    border: 10px solid #f5f5f5;
+    /* border: 10px solid rgba(24,24,27,0.8); */
     margin: 5px;
     grid-gap: 3px;
 }
@@ -207,8 +210,8 @@ main .division {
 main .division .one,
 .two,
 .three {
-    background-color: #f5f5f5;
-    border: 1px solid #9d9fa2;
+    /* background-color: rgba(24,24,27,0.8); */
+    border: 1px solid white;
 }
 
 main .division .three {
@@ -247,7 +250,7 @@ main .chamber {
 
 .event h2 {
     text-align: center;
-    padding-top: 45px;
+    padding-top: 20px;
 }
 
 .event h3 {
@@ -269,7 +272,7 @@ main .chamber {
 }
 
 .weather-divide{
-    background: rgba(24,24,27,0.8);
+    /* background: rgba(24,24,27,0.8); */
     color:white;
     width: 347.5px;
     margin: 5px;
@@ -307,7 +310,7 @@ main .chamber {
     border-radius: 10px;
     padding:15px;
     border-radius: 10px;
-    background: rgba(0,0,0,0.2);
+    background: rgb(0 0 0 / 48%);;
     margin-left: 15px;
 }
 
@@ -327,7 +330,11 @@ main .chamber {
     display: flex;
 }
 
-img{
+.icon-division img{
+    width: 100px
+}
+
+.weather-forecast-item img{
     width: 100px
 }
 
@@ -339,7 +346,7 @@ img{
     border: 1px solid #eee;
     padding: 15px;
     border-radius: 10px;
-    background: rgba(0,0,0,0.2)
+    background: rgb(0 0 0 / 48%);
 }
 
 .weather-forecast .weather-forecast-item .day{
@@ -502,31 +509,25 @@ h1 {
     padding: 20px;
     text-align: center;
 }
+.hero img{
+    border-radius: 10px;
+}
 
-/* /* .display-time{
-    margin: 30px 0 30px 0;
-} */
-
-
+.one, .two, .three, .join, .sub-division, .new, .weather, .hero{
+    border-radius: 10px;
+    border: 1px solid white;
+}
 .information h2{
     text-align: center;
     margin-top: 30px;
 }
-
-/* #discover .center img{
-    border: 1px solid rgb(50, 49, 49);
-}
-
-#discover .center img:hover{
-    box-shadow: 0 0 20px black;
-} */ 
 
 /* FOOTER */
 
 .social a {
     display: inline-block;
     font-size: inherit;
-    color: #2F3337;
+    color: white;
     text-align: right;
     text-decoration: none;
 }
@@ -543,7 +544,7 @@ h1 {
 }
 
 .footer a {
-    color: #2F3337;
+    color: white;
     text-decoration: none;
     display: inline-block;
     font-size: 0.75019em;
@@ -565,12 +566,12 @@ footer a:hover {
 .section-content {
     position: relative;
     border-bottom: 1px solid transparent;
-    background-color: #f5f5f5;
+    background-color: rgba(24,24,27,0.8);
     padding: 80px 10px 10px 10px;
 }
 
 .footer__copyright {
-    color: #2F3337;
+    color: white;
     text-align: center;
 }
 
@@ -608,7 +609,7 @@ footer a:hover {
     .navigation {
         list-style: none;
         padding: 20px 10px 10px 10px;
-        color: #2F3337;
+        color: white;
     }
 
     .nav-grid {
@@ -645,15 +646,15 @@ footer a:hover {
     }
 
     .navigation a:hover {
-        color: white;
-        background-color: #2F3337;
+        color: black;
+        background-color: white;
     }
 
     main .division {
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-gap: 5px;
-        background-color: #f5f5f5;
+        /* background-color: rgba(79, 79, 85, 0.8); */
     }
 
     main .join {
@@ -749,12 +750,13 @@ footer a:hover {
     .section-content {
         position: relative;
         border-bottom: 1px solid transparent;
-        background-color: #f5f5f5;
+        /* background-color: rgba(79, 79, 85, 0.8); */
         padding-left: 100px;
         padding-right: 100px;
         display: flex;
         flex-wrap: wrap;
         align-items: baseline;
+        margin-top: 53.5px;
     }
 
     .social {
@@ -764,7 +766,7 @@ footer a:hover {
     }
 
     .footer__copyright {
-        color: #2F3337;
+        color: white;
         padding-left: 16px;
         text-align: center;
     }
@@ -782,9 +784,10 @@ footer a:hover {
 
     main .main-division .division {
         display: grid;
-        grid-gap: 5px;
-        background-color: #f5f5f5;
+        grid-gap: 10px;
+        /* background-color: rgba(24,24,27,0.8); */
         grid-row: 1/4;
+        grid-template-rows: repeat(3, 230px);
     }
 
     main .division .three {
