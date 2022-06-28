@@ -33,17 +33,18 @@ fetch(url)
 
     for (let i = 0; i < forcastNextFiveDaysAt12.length; i++) {
         const currentTemp = document.querySelector("#current-temp" + (i+1));
-        const weatherIcon = document.querySelector("#weather-icon" + (i+1));
-        const captionDesc = document.querySelector("figcaption" + (i+1)); 
+        const weatherIcon = document.querySelector("#weather-icon" + (i+1)); 
         const currentWindSpeed = document.querySelector("#wind-speed" + (i+1))
         const iconsrc = `https://openweathermap.org/img/wn/${forcastNextFiveDaysAt12[i].weather[0].icon}@4x.png`;
         const desc = forcastNextFiveDaysAt12[i].weather[0].description;
-        
+        const captionDesc = document.querySelector("#figcaption" + (i+1));
+
         currentTemp.innerHTML = `${forcastNextFiveDaysAt12[i].main.temp.toFixed(0)}`;
         currentWindSpeed.innerHTML = `${forcastNextFiveDaysAt12[i].wind.speed.toFixed(0)}`;
         console.log(weatherIcon);
         weatherIcon.setAttribute("src", iconsrc);
         weatherIcon.setAttribute("alt", desc);
+        captionDesc.innerHTML = forcastNextFiveDaysAt12[i].weather[0].description;
        
 
     // WindChill Formula
@@ -72,7 +73,10 @@ fetch(url)
 
       }
       const currentHumidity = document.querySelector("#humidity1");
+      
+      
       currentHumidity.innerHTML = `${forcastNextFiveDaysAt12[0].main.humidity.toFixed(0)}`;
+      
 
 //     currentHumidity.innerHTML = `${data.main.humidity.toFixed(0)}`;
 
@@ -82,12 +86,9 @@ fetch(url)
 //     visibility.innerHTML = vis;
 //     city.innerHTML = `${data.name}`;
 
-//     const iconsrc = `https://openweathermap.org/img/wn/${data.weather[0].icon}@4x.png`;
-//     const desc = data.weather[0].description;
+//     
 
-//     weatherIcon.setAttribute("src", iconsrc);
-//     weatherIcon.setAttribute("alt", desc);
-//     captionDesc.textContent = desc;
+
 
 console.log(forcastNextFiveDaysAt12);
 
