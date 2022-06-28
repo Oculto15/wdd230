@@ -441,6 +441,10 @@ main .chamber {
     object-fit: contain;
 }
 
+#weather-attribution{
+    text-align: center
+}
+
 .two .text {
     position: relative;
     top: -15%;
@@ -848,7 +852,7 @@ footer a:hover {
         position: relative;
         top: -80%;
         font-size: 40px;
-        color: black;
+        color: white;
     }
 
     main .chamber {
@@ -903,10 +907,20 @@ footer a:hover {
         align-items: none;
         overflow-x: scroll;
     }
+    #weather-attribution{
+        text-align: right;
+        min-width: 38%;
+        padding-right: 9px;
+    }
+}
 
     @media only screen and (min-width: 1440px) {
+
     .weather-divide{
         width: 550px;
     }
-}
+    #weather-attribution{
+       
+        min-width: 50%;
+    }
 }
