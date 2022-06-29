@@ -38,11 +38,11 @@ aside {
 .navigation {
     list-style: none;
     padding: 20px 10px 10px 10px;
-    background-color: rgba(255, 255, 255, 0.06)
-
+    background-color: rgb(42 42 46);
 }
-.mid{
-    background-color:rgba(24,24,27,0.8);
+
+.arrow{
+    color: white;
 }
 
 .navigation2 {
