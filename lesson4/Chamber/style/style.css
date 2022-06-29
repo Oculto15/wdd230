@@ -410,7 +410,7 @@ main .chamber {
     display: block;
     height: 1px;
     margin: 0.5rem;
-    background-color: #191919;
+    background-color: white;
     opacity: 0.2;
     position: relative;
     top: -7%;
@@ -598,6 +598,7 @@ footer a:hover {
     transform: translateX(-50%);
     top: 8px;
 }
+
 @media only screen and (min-width: 375px) {
     .weather-divide{
         width: 365px;
@@ -609,6 +610,7 @@ footer a:hover {
         width: 415px;
     }
 }
+
 
 @media only screen and (min-width: 630px) {
     .navigation {
