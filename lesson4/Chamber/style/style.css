@@ -188,7 +188,7 @@ figcaption{
     top: -15px;
 }
 
-.weather-divide span:not() {
+.weather-divide span {
     text-align: center
 }
 
@@ -264,6 +264,7 @@ main .chamber {
     font-size: 18px;
     text-decoration: none;
     color: #0d07eebf;
+    padding-bottom: 10px;
 }
 
 .wea-div {
@@ -388,7 +389,7 @@ main .chamber {
 
 .new p,
 .event p {
-    padding: 10px 10px 0 10px;
+    padding: 10px 10px 10px 10px;
     font-size: 18px;
 }
 
@@ -706,7 +707,7 @@ footer a:hover {
 
     .future-forecast{
         justify-content: start;
-        align-items: none;
+
         overflow-y: scroll;
     }
 
@@ -904,13 +905,13 @@ footer a:hover {
 
      .future-forecast{
         justify-content: start;
-        align-items: none;
         overflow-x: scroll;
     }
     #weather-attribution{
+        flex: auto;
         text-align: right;
-        min-width: 38%;
-        padding-right: 9px;
+        min-width: 50%;
+        padding-right: 35px;
     }
 }
 
@@ -921,6 +922,6 @@ footer a:hover {
     }
     #weather-attribution{
        
-        min-width: 50%;
+        /* min-width: 50%; */
     }
 }
