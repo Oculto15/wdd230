@@ -101,27 +101,27 @@ form label.required::after {
 
 .member1 {
   color: black;
-  padding: 10px 0;
+  padding: 10px;
 }
 
 .member2 {
   border-radius: 10px;
   background-color: #CD7F32;
   color: black;
-  padding: 10px 0;
+  padding: 10px;
 }
 
 .member3 {
   border-radius: 10px;
   background-color: silver;
   color: black;
-  padding: 10px 0;
+  padding: 10px;
 }
 
 .member4 {
   border-radius: 10px;
   background-color: #E0CD67;
   color: black;
-  padding: 10px 0;
+  padding: 10px;
 }
 
