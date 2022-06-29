@@ -611,6 +611,12 @@ footer a:hover {
     }
 }
 
+@media only screen and (min-width: 558px) {
+    .weather-divide{
+        width: 548px;
+    }
+}
+
 
 @media only screen and (min-width: 630px) {
     .navigation {
