@@ -233,7 +233,7 @@ main .welcome {
     position: relative;
     top: -100%;
     text-align: center;
-    color: black;
+    color: white;
 }
 
 main .chamber {
@@ -870,7 +870,6 @@ footer a:hover {
         position: relative;
         top: -80%;
         font-size: 40px;
-        color: white;
     }
 
     main .chamber {
