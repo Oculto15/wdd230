@@ -34,6 +34,7 @@ section {
 
 .listCard .name{
     padding-bottom: 15px;
+    color: black
 }
 .cards .name{
     display: none;
@@ -60,6 +61,7 @@ h1 {
 .space{
     padding: 5px;
     text-align: center;
+    color: black;
 }
 
 .button {
