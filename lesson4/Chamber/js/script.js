@@ -45,5 +45,5 @@ document.querySelector("#message").textContent = weekday[weekdayValue]
 
 // Hidden information
 
-let rightNow = Date.now();
-document.querySelector("#visit-date").value = rightNow;
+// let rightNow = Date.now();
+// document.querySelector("#visit-date").value = rightNow;

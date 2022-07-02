@@ -6,13 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Put your description here.">
-    <title>Sign Up</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css?family=Oswald:700/Poppins" rel="stylesheet">
+    <title>Contact Us</title>
     <link rel="shortcut icon" href="images/icon_edb7a62a928a71370e2b4f23bcb2334f.ico">
-    <link rel="apple-touch-icon" href="/example.png">
     <link rel="stylesheet" href="style/style.css">
     <link rel="stylesheet" href="style/join.css">
+
 </head>
 
 <body>
@@ -53,93 +53,80 @@
         <aside></aside>
     </header>
 
-
     <main>
-        <h1>Welcome to Las Condes Chamber</h1>
-        <form class="container" method="get" action="thankyou.html">
-            <div class="inputs">
-                <input type="text" name="firstname" id="firstname" required>
-                <label for="firstname" class="required">First Name</label>
-            </div>
 
-            <div class="inputs">
-                <input type="text" name="middlename" id="middlename" placeholder=" " required>
-                <label for="middlename">Middle Name</label>
-            </div>
+        <h1>Contact US</h1>
+        <div class="both">
 
-            <div class="inputs">
-                <input type="text" name="firstname" id="lastname" required>
-                <label for="lastname" class="required">Last Name</label>
-            </div>
+            <div class="contact">
+                <div class="title">
 
-            <div class="inputs">
-                <input type="text" name="business-position" id="business-position" pattern="\D{7,}" placeholder=" "
-                    required>
-                <label for="business-position">Business position title field</label>
-            </div>
-
-            <div class="inputs">
-                <input type="email" name="email" id="email" required>
-                <label for="email" class="required">Email (example@email.com)</label>
-            </div>
-
-            <div class="inputs">
-                <input type="tel" name="phone" id="phone" pattern="\d{3}-\d{3}-\d{4}" required>
-                <label for="phone" class="required">Phone number (555-555-5555):</label>
-            </div>
-
-            <div class="inputs">
-                <input type="text" name="business-title" id="business-title" required>
-                <label for="business-title" class="required">Business Title</label>
-            </div>
-            
-            <div class="side"><p class="level">Membership level?</p>
-                <label>
-                    <input type="radio" id="np" name="status" value="1">
-                    NP Membership
-                </label>
-                <label>
-                    <input type="radio" id="bronze" name="status" value="2">
-                    Bronze Membership
-                </label>
-                <label>
-                    <input type="radio" id="silver" name="status" value="3">
-                    Silver Membership
-                </label>
-                <label>
-                    <input type="radio" id="gold" name="status" value="4">
-                    Gold Membership
-                </label>
-                <br>
-
-                <div id="group1">
-                    <div id="benefits">
-                        <p class="member1">No Cost <br>Free access to our public services</p>
+                </div>
+                <form class="container" method="get" action="thankyou.html">
+                    <div class="inputs">
+                        <input type="text" name="firstname" id="firstname" required>
+                        <label for="firstname" class="required">First Name</label>
                     </div>
-                    <div id="benefits2">
-                        <p class="member2">$50 Cost <br>Free access to our public services<br>Business
-                            Assistance
-                        </p>
+
+                    <div class="inputs">
+                        <input type="text" name="middlename" id="middlename" placeholder=" " required>
+                        <label for="middlename">Middle Name</label>
                     </div>
-                    <div id="benefits3">
-                        <p class="member3">$100 Cost <br>Free access to our public services<br>Business
-                            Assistance<br>One-time Business Analysis</p>
+
+                    <div class="inputs">
+                        <input type="text" name="firstname" id="lastname" required>
+                        <label for="lastname" class="required">Last Name</label>
                     </div>
-                    <div id="benefits4">
-                        <p class="member4">$150 Cost <br>Free access to our public services<br>Business
-                            Assistance<br>One-time Business Analysis<br>Marketing Advice and Guidance</p>
+
+
+
+                    <div class="inputs">
+                        <input type="email" name="email" id="email" required>
+                        <label for="email" class="required">Email (example@email.com)</label>
                     </div>
+
+                    <div class="inputs">
+                        <input type="tel" name="phone" id="phone" pattern="\d{3}-\d{3}-\d{4}" required>
+                        <label for="phone" class="required">Phone number (555-555-5555):</label>
+                    </div>
+
+                    <label class="description" for="w3review">Business description:</label>
+                    <textarea id="w3review" name="w3review" rows="4" cols="50"></textarea>
+                    <br>
+
+                    <input type="submit" value="Submit" id="myBtn">
+                </form>
+            </div>
+
+
+            <div class="contact-information">
+                <div class="place-information">
+                    <h4 class="h2">Visit Us</h4>
+                        <p>Las Condes Chamber of Commerce <br>123 Apoquindo Ave, #23 <br>Las Condes, Santiago 93847</p>
+                        <br>
+                        <p>Monday <span>-</span> Thursday: 9:00 a.m. to 4:30 p.m. <br>Friday: By Appointment Only</p>
+
+                </div>
+
+                <div class="person-contact">
+                    <h4 class="h2">POINTS OF CONTACT</h4>
+                        <p>Jaime Gusman <br>President & CEO <br>300 600 8000,ext. 101</p>
+                        <br>
+                        <p>Jessica Flores<br>Director of Marketing & Membership <br>300 600 8000,ext. 102</p>
+                        <br>
+                        <p>Arturo Aguilar <br>Operations Assistant <br>300 600 8000,ext. 103</p>
+                        <br>
+                        <p>Juan Pedro Lopez<br>Bookkeeper/Grant Project Manager <br>300 600 8000,ext. 104</p>
                 </div>
             </div>
+        </div>
 
-            <label class="description" for="w3review">Business description:</label>
-            <textarea id="w3review" name="w3review" rows="4" cols="50"></textarea>
-            <br>
+        <p class="map"><iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d46051.89887737237!2d-111.82320228362435!3d43.83004510346845!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x53540a4b807a98b1%3A0x4a49d8d1d2181c73!2sRexburg%2C%20ID!5e0!3m2!1sen!2sus!4v1648492225947!5m2!1sen!2sus"
+                width="380" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </p>
 
-            <input type="hidden" name="visit-date" id="visit-date" value="0">
-            
-            <input type="submit" value="Submit" id="myBtn">
-        </form>
     </main>
 
     <footer>
@@ -162,12 +149,17 @@
                 <div class="footer__copyright">
                     <p class="line">&copy; <span id="year"></span> | Ignacio N. Villar | WDD 230 Project | Last
                         modified: <span id="lastmod"></span></p>
+
                 </div>
+                <p id="weather-attribution">Weather data provided by <a
+                        href="https://openweathermap.org/">openweathermap.org</a></p>
+
+
             </div>
         </div>
     </footer>
     <script src="js/script.js"></script>
-    <script src="js/join.js"></script>
+
 </body>
 
 </html>
