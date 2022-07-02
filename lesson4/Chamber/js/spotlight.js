@@ -1,3 +1,24 @@
+// Information company one
+const companyOne = document.getElementById("companyOne");
+const imgOne = document.getElementById("imgOne");
+const messageOne = document.getElementById("messageOne");
+const WebsiteOne = document.getElementById("WebsiteOne");
+const phoneOne = document.getElementById("phoneOne");
+
+// Information company one
+const companyTwo = document.getElementById("companyTwo");
+const imgTwo = document.getElementById("imgTwo");
+const messageTwo = document.getElementById("messageTwo");
+const WebsiteTwo = document.getElementById("WebsiteTwo");
+const phoneTwo = document.getElementById("phoneTwo");
+
+// Information company one
+const companyThree = document.getElementById("companyThree");
+const imgThree = document.getElementById("imgThree");
+const messageThree = document.getElementById("messageThree");
+const WebsiteThree = document.getElementById("WebsiteThree");
+const phoneThree = document.getElementById("phoneThree");
+
 const jsonURL = "json/spotligth.json";
 
 fetch(jsonURL)

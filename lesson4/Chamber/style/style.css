@@ -408,6 +408,8 @@ main .chamber {
     margin-right: auto;
     position: relative;
     top: -7%;
+    object-fit: cover;
+    width: 80%;
 }
 
 .trans-divide {
@@ -443,7 +445,8 @@ main .chamber {
     margin-right: auto;
     position: relative;
     top: -5%;
-    object-fit: contain;
+    object-fit: cover;
+    width: 80%;
 }
 
 #weather-attribution{
@@ -474,6 +477,8 @@ main .chamber {
     position: relative;
     top: -2%;
     object-fit: cover;
+    width: 80%;
+   
 }
 
 .three .text {
