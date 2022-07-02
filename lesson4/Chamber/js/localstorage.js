@@ -15,7 +15,7 @@ let lastVisitDate;
 
 
         
-        console.log(secondsSinceLastVisit)
+      
 
         // document.querySelector('#seconds-ago').textContent = secondsSinceLastVisit
         document.querySelector('#days-ago').textContent = daysSinceLastVisit
