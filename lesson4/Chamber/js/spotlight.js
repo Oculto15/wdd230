@@ -36,29 +36,29 @@ fetch(jsonURL)
   for (var i = 0; i < times; i++) {
       let randomNumList = SGcompanies.length;
       let randomNumber = Math.floor(Math.random() * randomNumList);
-      let tempCompany = SGcompanies.splice(randomNumber, 1);
+      let randomCompany = SGcompanies.splice(randomNumber, 1);
       comp++
       if (comp == 1) {
-        companyOne.textContent = tempCompany[0]["name"];
-        imgOne.src = tempCompany[0]["imageURL"];
-        imgOne.alt = `${tempCompany[0]["name"]} Company Logo`;
-        messageOne.textContent = tempCompany[0]["message"];
-        WebsiteOne.textContent = tempCompany[0]["url"];
-        phoneOne.textContent = tempCompany[0]["phone"];
+        companyOne.textContent = randomCompany[0]["name"];
+        imgOne.src = randomCompany[0]["imageURL"];
+        imgOne.alt = `${randomCompany[0]["name"]} Company Logo`;
+        messageOne.textContent = randomCompany[0]["message"];
+        WebsiteOne.textContent = randomCompany[0]["url"];
+        phoneOne.textContent = randomCompany[0]["phone"];
       } else if (comp == 2) {
-        companyTwo.textContent = tempCompany[0]["name"];
-        imgTwo.src = tempCompany[0]["imageURL"];
-        imgTwo.alt = `${tempCompany[0]["name"]} Company Logo`;
-        messageTwo.textContent = tempCompany[0]["message"];
-        WebsiteTwo.textContent = tempCompany[0]["url"];
-        phoneTwo.textContent = tempCompany[0]["phone"];
+        companyTwo.textContent = randomCompany[0]["name"];
+        imgTwo.src = randomCompany[0]["imageURL"];
+        imgTwo.alt = `${randomCompany[0]["name"]} Company Logo`;
+        messageTwo.textContent = randomCompany[0]["message"];
+        WebsiteTwo.textContent = randomCompany[0]["url"];
+        phoneTwo.textContent = randomCompany[0]["phone"];
       } else {
-        companyThree.textContent = tempCompany[0]["name"];
-        imgThree.src = tempCompany[0]["imageURL"];
-        imgThree.alt = `${tempCompany[0]["name"]} Company Logo`;
-        messageThree.textContent = tempCompany[0]["message"];
-        WebsiteThree.textContent = tempCompany[0]["url"];
-        phoneThree.textContent = tempCompany[0]["phone"];
+        companyThree.textContent = randomCompany[0]["name"];
+        imgThree.src = randomCompany[0]["imageURL"];
+        imgThree.alt = `${randomCompany[0]["name"]} Company Logo`;
+        messageThree.textContent = randomCompany[0]["message"];
+        WebsiteThree.textContent = randomCompany[0]["url"];
+        phoneThree.textContent = randomCompany[0]["phone"];
       };
     }
 });
