@@ -1,0 +1,84 @@
+[
+  {
+    "name": "Amazon",
+    "address": "Amazon 410 Terry Ave N, Seattle Washington, United States",
+    "phone": "(206) 266-1000",
+    "url": "https://www.amazon.com/",
+    "imageURL": "images/amazon.webp",
+    "membershipLevel": "Gold",
+    "message": "Best services you can find."
+  },
+  {
+    "name": "Nike",
+    "address": "6699 N Landmark Dr Suite L-100, Park City, UT 84098",
+    "phone": "(435) 645-7078",
+    "url": "https://www.nike.com/",
+    "imageURL": "images/nike.webp",
+    "membershipLevel": "Gold",
+    "message": "Making difference."
+  },
+  {
+    "name": "Adidas",
+    "address": "6699 North Landmark Dr., Park City, Utah - UT 84098",
+    "phone": "(435) 645-7078",
+    "url": "https://www.adidas.com/",
+    "imageURL": "images/adidas.webp",
+    "membershipLevel": "Gold",
+    "message": "Walking with style."
+  },
+  {
+    "name": "Toyota",
+    "address": "615 S Yellowstone Hwy, Rexburg, ID 83440, US.",
+    "phone": "(208) 356-9366",
+    "url": "https://www.toyota.com/",
+    "imageURL": "images/toyota.webp",
+    "membershipLevel": "Silver",
+    "message": "Be safe, protect yourself."
+  },
+  {
+    "name": "Costco",
+    "address": "2495 E Lincoln Rd, Idaho Falls, ID 83401, United States",
+    "phone": "(986) 497-3149",
+    "url": "https://www.costco.com/",
+    "imageURL": "images/costco.webp",
+    "membershipLevel": "Gold",
+    "message": "Don't be afraid of Justice."
+  },
+  {
+    "name": "Target",
+    "address": "2171 S 25th E, Idaho Falls, ID 83406, United States.",
+    "phone": "(208) 535-2285",
+    "url": "https://www.target.com/",
+    "imageURL": "images/target.webp",
+    "membershipLevel": "Bronze",
+    "message": "If you want it, you got it."
+  },
+  {
+    "name": "General Electric",
+    "address": "5 Necco Street, Boston, MA 02210, United States.",
+    "phone": "(617) 443-3000",
+    "url": "https://www.ge.com/",
+    "imageURL": "images/general.webp",
+    "membershipLevel": "Silver",
+    "message": "Everthing is working find."
+  },
+  {
+    "name": "Walmart",
+    "address": "702 S.W. 8th St. Bentonville, Arkansas, AK 72716, US.",
+    "phone": "800-925-6278",
+    "url": "https://www.walmart.com/",
+    "imageURL": "images/walmart.webp",
+    "membershipLevel": "Silver",
+    "message": "Who said saving?, we said it"
+  },
+
+  {
+    "name": "Chase",
+    "address": "E, 1711 S 25th E, Ammon, ID 83406, United States.",
+    "phone": "(208) 524-4880",
+    "url": "https://www.chase.com/",
+    "imageURL": "images/chase.webp",
+    "membershipLevel": "Bronze",
+    "message": "Proctect your money."
+  }
+]
