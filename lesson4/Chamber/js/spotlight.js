@@ -1,4 +1,4 @@
-const jsonURL = "../json/spotligth.json";
+const jsonURL = "json/spotligth.json";
 
 fetch(jsonURL)
 .then((response) => response.json())
