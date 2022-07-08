@@ -135,12 +135,21 @@ nav {
 /* MAIN */
 
 main .main-video {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
-    height: 15vh;
-    display: block;
-    margin-top: -52px;
+    height: 100%;
     border: none;
-    padding-bottom: 25px;
+    margin-top: -52px;
+    z-index: -1;
+}
+
+.video-container{
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%;
 }
 
 h3 {
@@ -164,7 +173,7 @@ p {
     display: block;
     padding: 100px 0;
     border: none;
-    margin-left: 10px;
+    margin: auto;
 
 }
 
@@ -172,7 +181,6 @@ p {
     text-align: center;
     display: block;
 }
-
 
 .stay {
     background: transparent;
@@ -260,23 +268,23 @@ p {
 
 @media only screen and (min-width: 375px) {
 
-    main .main-video {
+    /* main .main-video {
         height: 17vh;
-    }
+    } */
 }
 
 @media only screen and (min-width: 425px) {
 
-    main .main-video {
+    /* main .main-video {
         height: 20vh;
-    }
+    } */
 }
 
 @media only screen and (min-width: 768px) {
 
-    main .main-video {
+    /* main .main-video {
         height: 36vh;
-    }
+    } */
 
     .information .second-video {
         height: 38vh;
@@ -293,9 +301,9 @@ p {
 
 @media only screen and (min-width: 1024px) {
 
-    main .main-video {
+    /* main .main-video {
         height: 45vh;
-    }
+    } */
 }
 
 
