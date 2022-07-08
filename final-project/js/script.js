@@ -13,3 +13,9 @@ hambutton.addEventListener(
 window.onresize = () => {if (window.innerWidth > 760) 
 mainnav.classList.remove("responsive");
 };
+
+
+function changewidth() { 
+  var x = document.getElementById('iframe'); 
+  x.style.width = "100%"; 
+}
