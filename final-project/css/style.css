@@ -1,23 +1,26 @@
-*{
+* {
     box-sizing: inherit;
     margin: 0;
     padding: 0;
 }
 
-body{
+body {
     min-height: 100vh;
     display: grid;
     grid-template-rows: auto 1fr auto;
     background-repeat: no-repeat;
-    background-size:cover;
+    background-size: cover;
     height: 100vh;
 }
 
-h1, h2, h3, p{
-    color:#796c5c; 
+h1,
+h2,
+h3,
+p {
+    color: #796c5c;
 }
 
-.page-header{
+.page-header {
     top: 0;
     height: 52px;
     opacity: unset;
@@ -37,40 +40,41 @@ h1, h2, h3, p{
     cursor: pointer;
 }
 
-.nav-container{
+.nav-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 50px;
     position: relative;
     padding: 0 25px;
-    background: rgba(0,0,0,.25);
+    background: rgba(0, 0, 0, .25);
     box-shadow: 0 10px 30px rgb(162 168 169 / 32%)
 }
 
-.middle-division ul{
-   
+.middle-division ul {
+
     list-style-type: none;
 }
 
-.middle-division ul li{
+.middle-division ul li {
     padding: 0 7px;
 }
 
-.middle-division ul li a{
-    color: rgba(255,255,255,.65);
+.middle-division ul li a {
+    color: rgba(255, 255, 255, .65);
     letter-spacing: 2px;
     text-transform: uppercase;
     text-decoration: none;
     font-size: 20px;
 }
 
-#home{
+#home {
     color: #fff;
 }
 
-.btn-primary, .btn-secondary{
-    background: transparent; 
+.btn-primary,
+.btn-secondary {
+    background: transparent;
     color: #fff;
     font-size: 20px;
     letter-spacing: 2px;
@@ -78,46 +82,46 @@ h1, h2, h3, p{
     border: none;
 }
 
-.btn-secondary{
+.btn-secondary {
     display: none;
 }
 
 nav {
-	margin: 0 auto;
-	max-width: 760px;
+    margin: 0 auto;
+    max-width: 760px;
 }
 
 .navigation {
-	list-style: none;
-	padding: 0;
+    list-style: none;
+    padding: 0;
 }
 
 .navigation li:first-child {
-	display: block;
+    display: block;
 }
 
 .navigation li {
-	display: none;
+    display: none;
 }
 
 .navigation a {
-	display: block;
-	padding: 0.75rem;
-	text-align: left;
-	text-decoration: none;
-	color: black;
-	font-weight: 700;
-	transition: 0.5s;
-	font-size: clamp(1rem, 2vmin, 1.5rem);
+    display: block;
+    padding: 0.75rem;
+    text-align: left;
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+    transition: 0.5s;
+    font-size: clamp(1rem, 2vmin, 1.5rem);
 }
 
 .navigation a:hover {
-	color: white;
-	background-color: black;
+    color: white;
+    background-color: black;
 }
 
 .responsive li {
-	display: block;
+    display: block;
 }
 
 .navigation a.ham::before {
@@ -134,7 +138,7 @@ main iframe {
     border: none;
 }
 
-h3{
+h3 {
     width: 150px;
     text-align: center;
     margin-left: auto;
@@ -142,7 +146,7 @@ h3{
     padding: 50px 0 30px 0;
 }
 
-p{
+p {
     width: 235px;
     text-align: center;
     margin-left: auto;
@@ -156,8 +160,8 @@ p{
     height: 27vh;
 }
 
-.stay{
-    background: transparent; 
+.stay {
+    background: transparent;
     font-size: 20px;
     letter-spacing: 2px;
     text-transform: uppercase;
@@ -170,12 +174,13 @@ p{
     transform: translate(-50%, -50%);
 }
 
-.stay a{
+.stay a {
     text-decoration: none;
-    color:#796c5c; 
+    color: #796c5c;
 }
 
-.trans-divide, .stay-divide {
+.trans-divide,
+.stay-divide {
     display: block;
     height: 2px;
     margin: 0.5rem;
@@ -194,6 +199,83 @@ p{
     position: absolute;
 }
 
+/* CSS for slideshow */
+
+.slideshow-container {
+    position: relative;
+    margin: auto;
+    top: 47%;
+    width: 95%;
+}
+
+/* Hide the images by default */
+.mySlides {
+    display: none;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* The dots/bullets/indicators */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+    background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+/* End of CSS for slideshow */
 
 
 @media only screen and (min-width: 375px) {
@@ -241,17 +323,21 @@ p{
 
 
 @media only screen and (min-width: 1100px) {
-	.navigation {
-		display: flex;
-	}
-	.navigation li {
-		display: block; /* change state in small view */
-		flex: 1 1 auto;
-	}
-	.navigation a {
-		text-align: center;
-	}
-	.navigation li:first-child {
-		display: none;
-	}
+    .navigation {
+        display: flex;
+    }
+
+    .navigation li {
+        display: block;
+        /* change state in small view */
+        flex: 1 1 auto;
+    }
+
+    .navigation a {
+        text-align: center;
+    }
+
+    .navigation li:first-child {
+        display: none;
+    }
 }
