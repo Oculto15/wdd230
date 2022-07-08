@@ -161,18 +161,18 @@ p {
 
 }
 
+.text-center {
+    text-align: center;
+    display: block;
+}
+
+
 .stay {
     background: transparent;
     font-size: 20px;
     letter-spacing: 2px;
     text-transform: uppercase;
     border: none;
-    margin: 0;
-    position: absolute;
-    top: 43%;
-    left: 50%;
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
 }
 
 .stay a {
@@ -187,17 +187,12 @@ p {
     margin: 0.5rem;
     background-color: #796c5c;
     opacity: 0.2;
-    position: relative;
     width: 100px;
-    left: 32%;
 }
 
 .stay-divide {
     height: 3px;
     width: 63px;
-    left: 38%;
-    top: 43.5%;
-    position: absolute;
 }
 
 /* CSS for slideshow */
