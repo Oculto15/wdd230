@@ -155,9 +155,10 @@ p {
 }
 
 .information iframe {
-    position: absolute;
-    top: 53%;
     height: 27vh;
+    display: block;
+    padding: 150px 0 100px 0;
+
 }
 
 .stay {
@@ -202,7 +203,7 @@ p {
 /* CSS for slideshow */
 
 .slideshow-container {
-    position: relative;
+    /* position: relative; */
     margin: auto;
     top: 47%;
     width: 95%;
@@ -252,6 +253,7 @@ p {
     border-radius: 50%;
     display: inline-block;
     transition: background-color 0.6s ease;
+    top: 50%;
 }
 
 .active,
