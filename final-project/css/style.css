@@ -66,8 +66,14 @@ p {
     text-transform: uppercase;
     text-decoration: none;
     font-size: 20px;
+    font-family: 'Roboto', sans-serif;
 }
 
+.middle-division ul li a:hover {
+    color: #fff;
+    transition: all 0.3s ease-in;
+    background-color: transparent;
+}
 #home {
     color: #fff;
 }
@@ -94,6 +100,9 @@ nav {
 .navigation {
     list-style: none;
     padding: 0;
+    position: absolute;
+    top: 0%;
+
 }
 
 .navigation li:first-child {
@@ -109,15 +118,7 @@ nav {
     padding: 0.75rem;
     text-align: left;
     text-decoration: none;
-    color: black;
-    font-weight: 700;
-    transition: 0.5s;
     font-size: clamp(1rem, 2vmin, 1.5rem);
-}
-
-.navigation a:hover {
-    color: white;
-    background-color: black;
 }
 
 .responsive li {
@@ -128,9 +129,14 @@ nav {
     content: "\2630";
 }
 
-.logo{
-    display: flex;
+.logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
+
+
 
 /* MAIN */
 
@@ -145,7 +151,7 @@ main .main-video {
     z-index: -1;
 }
 
-.video-container{
+.video-container {
     position: relative;
     width: 100%;
     height: 0;
@@ -160,7 +166,7 @@ h3 {
     padding: 30px 0 30px 0;
 }
 
-p {
+.info-text {
     width: 235px;
     text-align: center;
     margin-left: auto;
@@ -171,13 +177,13 @@ p {
 .information .second-video {
     height: 27vh;
     display: block;
-    padding: 100px 0;
+    padding: 80px 0;
     border: none;
     margin: auto;
 
 }
 
-.text-center {
+.text-center, .slide-text {
     text-align: center;
     display: block;
 }
@@ -188,9 +194,6 @@ p {
     letter-spacing: 2px;
     text-transform: uppercase;
     border: none;
-}
-
-.stay a {
     text-decoration: none;
     color: #796c5c;
 }
@@ -227,14 +230,19 @@ p {
 /* The dots/bullets/indicators */
 .dot {
     cursor: pointer;
-    height: 15px;
-    width: 15px;
+    height: 10px;
+    width: 10px;
     margin: 0 2px;
     background-color: #796c5c;
     border-radius: 50%;
     display: inline-block;
     transition: background-color 0.6s ease;
     top: 50%;
+}
+
+.three-dots {
+    text-align: center;
+    padding-bottom: 30px;
 }
 
 .active,
@@ -248,9 +256,10 @@ p {
     animation-duration: 1.5s;
 }
 
-.fade img{
+.fade img {
     width: 100%;
     height: auto;
+    padding-top: 50px;
 }
 
 @keyframes fade {
@@ -265,55 +274,218 @@ p {
 
 /* End of CSS for slideshow */
 
-
-@media only screen and (min-width: 375px) {
-
-    /* main .main-video {
-        height: 17vh;
-    } */
+.explore{
+    color: #796c5c;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 15px 50px;
+    border: 1px solid #796c5c;
 }
+
+.explore:hover{
+    color: #fff;
+    background-color: #796c5c;
+    transition: all 0.3s ease-in;
+}
+
+.slide-text p{
+    padding-bottom: 60px;
+}
+
+figcaption{
+   color: #796c5c;
+   text-transform: capitalize; 
+}
+
+.future-forecast{
+    padding: 10px;
+    display: flex;
+    color: #796c5c;   
+    overflow-y: hidden;
+}
+
+.future-forecast .weather-forecast{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.weather-forecast-item{
+    padding: 15px 20px;
+    border: 1px solid #796c5c;
+    margin: 0 20px;
+    align-items: center;
+}
+
+.day-title{
+    text-align: center;
+}
+
+.weather-forecast .weather-forecast-item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 1px solid #796c5c84;
+    padding: 15px;
+    width: 120px;
+}
+
+.weather-divide{
+    width: 210px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+/* FOOTER */
+
+.join-us {
+    text-align: center;
+    background-color: #6B6764;
+    padding: 10px;
+    margin-top: 55px;
+}
+
+h2 {
+    padding: 10px;
+}
+
+.join-us .text-center {
+    text-align: center;
+    display: block;
+}
+
+.join {
+    color: white;
+    margin: 0 auto;
+}
+
+input {
+    width: 85%;
+    padding: 10px;
+    text-align: center;
+}
+
+.join-button {
+    background: #796c5c;
+    font-size: 15px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    border: none;
+    color: white;
+    padding: 15px;
+    margin: 15px 0;
+}
+
+.header-social a {
+    align-items: center;
+    display: inline-block;
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+}
+
+.icon {
+    padding: 6px;
+    font-size: 23px;
+    color: white;
+}
+
+.social,
+.footer-nav li {
+    text-align: center;
+    padding: 5px;
+}
+
+.second-footer {
+    background-color: #6B6764
+}
+
+.footer-nav li a {
+    color: rgba(255, 255, 255, .65);
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.logo-footer {
+    text-align: center;
+    padding-top: 10px;
+}
+
+.logo-footer img {
+    width: 300px;
+    height: auto;
+}
+
+
+@media only screen and (min-width: 375px) {}
 
 @media only screen and (min-width: 425px) {
 
-    /* main .main-video {
-        height: 20vh;
-    } */
+    .information .second-video {
+        height: 35vh;
+        width: 29vh;
+    }
 }
 
 @media only screen and (min-width: 768px) {
 
-    /* main .main-video {
-        height: 36vh;
-    } */
-
     .information .second-video {
         height: 38vh;
         width: 29vh;
+        padding-right: 50px;
     }
 
-    .information{
+    .information {
         display: grid;
         grid-template-columns: 1fr 1fr;
         justify-content: space-around;
         align-items: center;
     }
+
+    .btn-secondary {
+        display: contents;
+    }
+
+    .btn-primary {
+        display: none;
+    }
+
+    .logo {
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+    }
+
+    .flex-footer,
+    .footer-nav {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        list-style: none;
+    }
+
+    .flex-footer {
+        padding-bottom: 20px;
+    }
+
+    .weather-divide{
+        width: 600px;
+    }
 }
 
 @media only screen and (min-width: 1024px) {
 
-    /* main .main-video {
-        height: 45vh;
-    } */
+    .weather-divide{
+        width: 780px;
+    }
 }
-
-
-
-
-
-
-
-
-
 
 @media only screen and (min-width: 1100px) {
     .navigation {
@@ -332,5 +504,19 @@ p {
 
     .navigation li:first-child {
         display: none;
+    }
+
+    .move-left {
+        position: fixed;
+        left: 58vw;
+    }
+
+    .move-left2 {
+        position: fixed;
+        left: 68vw;
+    }
+
+    .weather-divide{
+        width: 1000px;
     }
 }

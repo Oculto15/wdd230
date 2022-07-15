@@ -6,7 +6,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="hotels">
-    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;1,300&family=Roboto:wght@100&family=Ubuntu:wght@300;700&display=swap"
+        rel="stylesheet">
+    <title>TEMPLE INN & SUITES</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="apple-touch-icon" href="/example.png">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -30,8 +37,8 @@
                         <li><a href="">About Us</a></li>
                         <li><a href="">Services</a></li>
                         <li><a href="">Gallery</a></li>
-                        <li><a href="">Temples</a></li>
-                        <li><a href="">Contact Us</a></li>
+                        <li class="move-left"><a href="">Temples</a></li>
+                        <li class="move-left2"><a href="">Contact Us</a></li>
                     </ul>
                 </div>
             </div>
@@ -55,30 +62,99 @@
 
     <main>
 
+
+
         <div class="video-container">
-            <iframe class="main-video" loading="lazy" src="https://player.vimeo.com/video/655500610?background=1?autoplay=1"
-            data-rocket-lazyload="fitvidscompatible"
-            data-lazy-src="https://player.vimeo.com/video/655500610?background=1?autoplay=1" data-ll-status="loaded"
-            data-ready="true">
-        </iframe>
+            <iframe class="main-video" loading="lazy"
+                src="https://player.vimeo.com/video/655500610?background=1?autoplay=1"
+                data-rocket-lazyload="fitvidscompatible"
+                data-lazy-src="https://player.vimeo.com/video/655500610?background=1?autoplay=1" data-ll-status="loaded"
+                data-ready="true">
+            </iframe>
+        </div>
+
+        <div class="weather-divide weather">
+            <h3 class="weather-title">WEATHER</h3>
+            <div class="future-forecast">
+                <div class="weather-forecast" id="weather-forecast">
+                    <div class="weather-forecast-item">
+                        <div class="day1 day-title"></div>
+                        <img src="#" alt="#" id="weather-icon1" width="100" height="85">
+                        <p id="temp1"><span id="current-temp1"></span> &deg;F</p> <br>
+                        <figure>
+                            <figcaption id="figcaption1"></figcaption>
+                        </figure>
+                        <p>Humidity <span id="humidity1"></span> %</p>
+                        <p>Wind Speed <span id="wind-speed1"></span> m/s</p>
+                        <p>Wind Chill <span class="windchill1"></span> </p>
+                    </div>
+                    <div class="weather-forecast-item">
+                        <div class="day2 day-title"></div>
+                        <img src="#" alt="#" id="weather-icon2" width="100" height="85">
+                        <p id="temp2"><span id="current-temp2"></span> &deg;F</p><br>
+                        <figure>
+                            <figcaption id="figcaption2"></figcaption>
+                        </figure>
+                        <p>Humidity <span id="humidity2"></span> %</p>
+                        <p>Wind Speed <span id="wind-speed2"></span> m/s</p>
+                        <p>Wind Chill <span class="windchill2"></span> </p>
+                    </div>
+                    <div class="weather-forecast-item">
+                        <div class="day3 day-title"></div>
+                        <img src="#" alt="#" id="weather-icon3" width="100" height="85">
+                        <p id="temp3"><span id="current-temp3"></span> &deg;F</p><br>
+                        <figure>
+                            <figcaption id="figcaption3"></figcaption>
+                        </figure>
+                        <p>Humidity <span id="humidity3"></span> %</p>
+                        <p>Wind Speed <span id="wind-speed3"></span> m/s</p>
+                        <p>Wind Chill <span class="windchill3"></span> </p>
+                    </div>
+                    <div class="weather-forecast-item">
+                        <div class="day4 day-title"></div>
+                        <img src="#" alt="#" id="weather-icon4" width="100" height="85">
+                        <p id="temp4"><span id="current-temp4"></span> &deg;F</p><br>
+                        <figure>
+                            <figcaption id="figcaption4"></figcaption>
+                        </figure>
+                        <p>Humidity <span id="humidity4"></span> %</p>
+                        <p>Wind Speed <span id="wind-speed4"></span> m/s</p>
+                        <p>Wind Chill <span class="windchill4"></span> </p>
+                    </div>
+                    <div class="weather-forecast-item">
+                        <div class="day5 day-title"></div>
+                        <img src="#" alt="#" id="weather-icon5" width="100" height="85">
+                        <p id="temp5"><span id="current-temp5"></span> &deg;F</p><br>
+                        <figure>
+                            <figcaption id="figcaption5"></figcaption>
+                        </figure>
+                        <p>Humidity <span id="humidity5"></span> %</p>
+                        <p>Wind Speed <span id="wind-speed5"></span> m/s</p>
+                        <p>Wind Chill <span class="windchill5"></span> </p>
+                    </div>
+
+                </div>
+            </div>
         </div>
 
         <div class="information">
             <div>
-                <h3>LUXURY FOR THE SOUL</h3>
+                <h3>PEACE FOR THE SOUL</h3>
                 <hr class="trans-divide">
-                <p>Welcome to our sustainable home of wonder in AlUla, an immersive experience where nature inspires
-                    creative expression, human connection and the pursuit of adventure.
+                <p class="info-text">Welcome to our sustainable home of wonder in Okpu, an immersive experience where
+                    nature inspires
+                    creative expression, human connection and spiritual elevation.
                 </p>
 
                 <div class="text-center">
-                    <button class="stay"><a href="">Stay</a></button>
+                    <a href="" class="stay">STAY</a>
                 </div>
                 <div class="text-center">
                     <hr class="stay-divide">
                 </div>
             </div>
-            <iframe class="second-video" loading="lazy" src="https://player.vimeo.com/video/655546140?background=1"></iframe>
+            <iframe class="second-video" loading="lazy"
+                src="https://player.vimeo.com/video/655546140?background=1"></iframe>
         </div>
 
 
@@ -86,24 +162,30 @@
 
             <!-- Full-width images with number and caption text -->
             <div class="mySlides fade">
-                <img src="images/temple2.webp" style="width:100%" alt="" width="300" height="202.77">
+                <img src="images/hotel2.webp" style="width:100%" alt="" width="300" height="203">
             </div>
 
             <div class="mySlides fade">
-                <img src="images/temple1.webp" style="width:100%" alt="" width="300" height="202.77">
+                <img src="images/hotel5.webp" style="width:100%" alt="" width="300" height="203">
             </div>
 
             <div class="mySlides fade">
-                <img src="images/temple3.webp" style="width:100%" alt="" width="300" height="202.77">
+                <img src="images/hotel1.webp" style="width:100%" alt="" width="300" height="203">
             </div>
         </div>
         <br>
 
         <!-- The dots/circles -->
-        <div style="text-align:center">
+        <div class="three-dots">
             <span class="dot" onclick="currentSlide(1)"></span>
             <span class="dot" onclick="currentSlide(2)"></span>
             <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+
+        <div class="slide-text">
+            <p class="info-text">Our villas are sustainably designed to embrace the natural surroundings of the Ashar
+                Valley, offering scenic canyon views.</p>
+            <a href="" class="explore">EXPLORE MORE</a>
         </div>
 
 
@@ -112,12 +194,36 @@
     </main>
 
     <footer>
-        <h2>hello
-        </h2>
+        <div class="join-us">
+            <h2 class="join">JOIN OUR FAMILY</h2>
+            <label for="email"></label>
+            <input type="email" placeholder="SIGN UP FOR EMAIL UPDATES" id="email" name="email">
+            <div class="text-center">
+                <button class="join-button">JOIN US</button>
+            </div>
+        </div>
+        <hr>
+
+        <div class="second-footer">
+            <div class="logo-footer">
+                <a href="index.html"><img src="images/Picture1-removebg-preview.png" alt="" width="159" height="48"></a>
+            </div>
+            <div class="flex-footer">
+                <ul class="footer-nav">
+                    <li><a href="">Services</a></li>
+                    <li><a href="">Contact Us</a></li>
+                </ul>
+                <div class="social">
+                    <a href="https://facebook.com" target="_blank"><i class="fa-brands fa-facebook-f icon"></i></a>
+                    <a href="https://instagram.com" target="_blank"><i class="fa-brands fa-instagram icon"></i></a>
+                    <a href="https://linkedin.com" target="_blank"><i class="fa-brands fa-linkedin-in icon"></i></a>
+                </div>
+            </div>
+        </div>
     </footer>
 
 
-
+    <script src="js/forecast.js"></script>
     <script src="js/script.js"></script>
 </body>
 
