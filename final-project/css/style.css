@@ -164,6 +164,8 @@ h3 {
     margin-left: auto;
     margin-right: auto;
     padding: 30px 0 30px 0;
+    letter-spacing: 2px;
+    font-weight: 100;
 }
 
 .info-text {
@@ -198,8 +200,20 @@ h3 {
     color: #796c5c;
 }
 
+.book {
+    background: transparent;
+    font-size: 20px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    border: none;
+    text-decoration: none;
+    color: #796c5c;
+    padding-bottom: 50px;
+}
+
 .trans-divide,
-.stay-divide {
+.stay-divide,
+.stay-divide-book {
     display: block;
     height: 2px;
     margin: auto;
@@ -211,6 +225,12 @@ h3 {
 .stay-divide {
     height: 3px;
     width: 63px;
+}
+
+.stay-divide-book {
+    height: 3px;
+    width: 63px;
+    margin-bottom: 50px;
 }
 
 /* CSS for slideshow */
@@ -327,7 +347,7 @@ figcaption{
     justify-content: center;
     border: 1px solid #796c5c84;
     padding: 15px;
-    width: 120px;
+    width: 130px;
 }
 
 .weather-divide{
@@ -336,7 +356,44 @@ figcaption{
     margin-right: auto;
 }
 
+.accordion__controls {
+    margin: auto;
+    margin-top: 60px;
+    border-bottom: 1px solid rgba(0,0,0,.25);
+    width: 100%;
+    max-width: 380px;
+    list-style: none;
+}
 
+.accordion__btn {
+    position: relative;
+    padding: 15px 30px;
+    padding-right: 60px;
+    display: flex;
+    align-items: center;
+    font-size: 1.4rem;
+    text-align: left;
+    text-transform: uppercase;
+    letter-spacing: .36rem;
+    border-top: 1px solid rgba(0,0,0,.25);
+    text-decoration: none;
+    color: #796c5c;
+}
+
+#desserts-img, #beverage-img, #dinner-img, #lunch-img{
+    display: none;
+}
+
+.accordion__btn:hover{
+    cursor: pointer;
+}
+
+.center-img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 30px;
+  }
 
 /* FOOTER */
 
@@ -477,6 +534,38 @@ input {
 
     .weather-divide{
         width: 600px;
+    }
+
+    .three-image{
+      
+        align-items: flex-start;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .imageone, .imagetwo, .imagethree{
+        
+        width: 50%;
+        height: auto;
+        
+    }
+
+    .imageone{
+        /* margin-left: 7.5%;
+        margin-bottom: 100px;
+        width:fit-content; 
+        grid-row: 1; */
+    }
+
+    .imagetwo{
+        /* position: fixed;
+        top: 420px;
+        left: 450px;
+        width: 300px; */
+    }
+
+    .imagethree{
+        /* width: 50%; */
     }
 }
 
