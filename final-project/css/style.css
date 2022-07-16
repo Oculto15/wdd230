@@ -358,10 +358,9 @@ figcaption{
 
 .accordion__controls {
     margin: auto;
-    margin-top: 60px;
     border-bottom: 1px solid rgba(0,0,0,.25);
     width: 100%;
-    max-width: 380px;
+    max-width: 280px;
     list-style: none;
 }
 
@@ -537,35 +536,31 @@ input {
     }
 
     .three-image{
-      
-        align-items: flex-start;
         flex-wrap: wrap;
         justify-content: space-between;
     }
 
     .imageone, .imagetwo, .imagethree{
-        
-        width: 50%;
+        width: 70%;
         height: auto;
-        
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 10px;
     }
 
-    .imageone{
-        /* margin-left: 7.5%;
-        margin-bottom: 100px;
-        width:fit-content; 
-        grid-row: 1; */
+    .center-img{
+        width: 80%;
+        height: auto;
     }
 
-    .imagetwo{
-        /* position: fixed;
-        top: 420px;
-        left: 450px;
-        width: 300px; */
+    .flex-menu{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
     }
 
-    .imagethree{
-        /* width: 50%; */
+    .info-text{
+        width: 400px
     }
 }
 
@@ -596,13 +591,17 @@ input {
     }
 
     .move-left {
-        position: fixed;
-        left: 58vw;
+        position: inherit;
+        left: 140%;
     }
 
     .move-left2 {
-        position: fixed;
-        left: 68vw;
+        position: inherit;
+        left: 165%;
+    }
+
+    .move-left2 a{
+        width: 140px;
     }
 
     .weather-divide{
