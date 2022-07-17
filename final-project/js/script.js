@@ -21,3 +21,14 @@ function changewidth() {
 }
 
 
+
+
+const moreMenu = document.querySelector('.more-menu-parent');
+moreMenu.addEventListener("click", toggleMoreMenu);
+
+function toggleMoreMenu() {
+    console.log(this)
+	this.querySelector('.more-menu').classList.toggle('active-more-menu');
+}
+
+

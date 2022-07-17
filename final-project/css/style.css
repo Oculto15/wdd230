@@ -60,7 +60,7 @@ p {
     padding: 0 7px;
 }
 
-.middle-division ul li a {
+.middle-division ul li a, .dropbtn {
     color: rgba(255, 255, 255, .65);
     letter-spacing: 2px;
     text-transform: uppercase;
@@ -68,6 +68,11 @@ p {
     font-size: 20px;
     font-family: 'Roboto', sans-serif;
 }
+
+/* .dropbtn{
+    position: absolute;
+    top: 0%;
+} */
 
 .middle-division ul li a:hover {
     color: #fff;
@@ -113,7 +118,7 @@ nav {
     display: none;
 }
 
-.navigation a {
+.navigation a, .dropbtn {
     display: block;
     padding: 0.75rem;
     text-align: left;
@@ -136,6 +141,26 @@ nav {
     transform: translate(-50%, -50%);
 }
 
+.responsive{
+    background:#00000061;;
+}
+
+#services:checked~.dropdown-content {
+    display: block;
+    max-height: 200px;
+}
+
+#services {
+    display: none;
+}
+
+.dropdown-content{
+    display: none;
+}
+
+.dropdown-content li a {
+    padding: 15px;
+}  
 
 
 /* MAIN */
@@ -148,7 +173,6 @@ main .main-video {
     height: 100%;
     border: none;
     margin-top: -52px;
-    z-index: -1;
 }
 
 .video-container {
@@ -156,6 +180,13 @@ main .main-video {
     width: 100%;
     height: 0;
     padding-bottom: 56.25%;
+    z-index: -1;
+}
+
+.suits-img{
+    width: 100%;
+    padding-bottom: 56.25%;
+    margin-top: -52px;
 }
 
 h3 {
@@ -213,7 +244,8 @@ h3 {
 
 .trans-divide,
 .stay-divide,
-.stay-divide-book {
+.stay-divide-book,
+.stay-divide-contact {
     display: block;
     height: 2px;
     margin: auto;
@@ -230,6 +262,12 @@ h3 {
 .stay-divide-book {
     height: 3px;
     width: 63px;
+    margin-bottom: 50px;
+}
+
+.stay-divide-contact {
+    height: 3px;
+    width: 150px;
     margin-bottom: 50px;
 }
 
@@ -364,6 +402,8 @@ figcaption{
     list-style: none;
 }
 
+/* WEDDING */
+
 .accordion__btn {
     position: relative;
     padding: 15px 30px;
@@ -392,7 +432,49 @@ figcaption{
     margin-left: auto;
     margin-right: auto;
     padding-top: 30px;
-  }
+}
+
+/* missionary services */
+
+.capacity, .capacity-size, .bed-size, .desert, .mountain{
+    display:flex;
+    align-items: center;
+    margin: auto;
+    width: 85%;
+    padding-left: 10px;
+}
+
+.capacity-size, .bed-size, .mountain{
+    border-bottom: 1px solid rgba(0,0,0,.25);   
+}
+
+.img-cont{
+    text-align: center;
+}
+
+.capacity-suits, .capacity-suits, .capacity-views{
+    margin-left: auto;
+    margin-right: auto;
+    padding: 30px 0 10px 0;
+    letter-spacing: 2px;
+    font-weight: 100;
+    font-size: 19px;
+    padding-left: 25px;
+}
+
+.single-suit, .premium-suit, .luxury-suit{
+    height: auto;
+    padding-top: 30px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.capacity-flex, .bed-flex, .view-flex{
+    margin-right: auto;
+    margin-left: auto;
+    width: 250px;
+}
 
 /* FOOTER */
 
@@ -477,13 +559,22 @@ input {
 }
 
 
-@media only screen and (min-width: 375px) {}
+@media only screen and (min-width: 375px) {
+    
+    .single-suit, .premium-suit, .luxury-suit{
+        width: 90%;
+    }
+}
 
 @media only screen and (min-width: 425px) {
 
     .information .second-video {
         height: 35vh;
         width: 29vh;
+    }
+
+    .capacity-flex, .bed-flex, .view-flex{
+        width: 300px;
     }
 }
 
@@ -562,12 +653,52 @@ input {
     .info-text{
         width: 400px
     }
+
+    .flex-div{
+        display: grid;
+        grid-template-columns: 1.5fr 1fr 1fr;
+        justify-content:center;
+        border-bottom: 1px solid rgba(0,0,0,.25);
+        height: 200px;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .capacity-size, .bed-size, .mountain {
+        border-bottom: none;
+    }
+
+    .capacity-flex, .bed-flex {
+        border-right: 1px solid rgba(0,0,0,.25);   
+        height: 80%;
+        margin-top: 20px;
+        margin-left: 10px;
+    }
+
+    .capacity-flex{
+        margin-left: 30px;
+    }
+
+    .view-flex{
+        margin-top: 20px;
+        margin-left: 10px;
+    }
+
+    .capacity, .capacity-size, .bed-size, .desert, .mountain{
+        padding-left: 20px;
+    }
+
 }
 
 @media only screen and (min-width: 1024px) {
 
     .weather-divide{
         width: 780px;
+    }
+
+    .capacity-flex{
+        margin-left: 60px;
     }
 }
 
