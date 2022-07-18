@@ -1,6 +1,5 @@
-const requestURL = 'json/temples.json';
-const cardf = document.querySelector('.front');
-fetch(requestURL)
+const url = 'json/temples.json';
+fetch(url)
 .then(function (response) {
   return response.json();
 })
