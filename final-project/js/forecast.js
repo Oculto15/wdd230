@@ -19,7 +19,6 @@ let forcastNextFiveDaysAt12 = [];
 fetch(url)
   .then((response) => response.json())
   .then((data) => {
-    console.log(data)
     const array = data.list.map((item) => {
       const hour = item.dt_txt.split(" ")[1];
 
