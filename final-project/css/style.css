@@ -206,6 +206,7 @@ h3 {
 .near {
     width: 100%;
     font-size: 20px;
+    margin-top: 20px;
 }
 
 h4 {
@@ -675,6 +676,12 @@ form label.required::after {
     text-align: center
 }
 
+/* AMENITIES PAGE */
+
+.offer{
+    padding-left: 10px;
+}
+
 /* FOOTER */
 
 .join-us {
@@ -867,7 +874,7 @@ input {
 
     .flex-div {
         display: grid;
-        grid-template-columns: 1.5fr 1fr 1fr;
+        grid-template-columns: 1.3fr 1fr 1fr;
         justify-content: center;
         border-bottom: 1px solid rgba(0, 0, 0, .25);
         height: 200px;
