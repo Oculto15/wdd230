@@ -58,7 +58,8 @@ p {
 }
 
 
-.middle-division ul li a, .dropbtn {
+.middle-division ul li a,
+.dropbtn {
     color: rgba(255, 255, 255, .65);
     letter-spacing: 2px;
     text-transform: uppercase;
@@ -77,6 +78,7 @@ p {
     transition: all 0.3s ease-in;
     background-color: transparent;
 }
+
 #home {
     color: #fff;
 }
@@ -89,6 +91,7 @@ p {
     letter-spacing: 2px;
     text-transform: uppercase;
     border: none;
+    text-decoration: none;
 }
 
 .btn-secondary {
@@ -116,12 +119,13 @@ nav {
     display: none;
 }
 
-.navigation a, .dropbtn {
+.navigation a,
+.dropbtn {
     display: block;
     padding: 0.75rem;
     text-align: left;
     text-decoration: none;
-    
+
 }
 
 .responsive li {
@@ -139,8 +143,9 @@ nav {
     transform: translate(-50%, -50%);
 }
 
-.responsive{
-    background:#00000061;;
+.responsive {
+    background: #00000061;
+    ;
 }
 
 #services:checked~.dropdown-content {
@@ -152,13 +157,13 @@ nav {
     display: none;
 }
 
-.dropdown-content{
+.dropdown-content {
     display: none;
 }
 
 .dropdown-content li a {
     padding: 15px;
-}  
+}
 
 
 /* MAIN */
@@ -181,7 +186,7 @@ main .main-video {
     z-index: -1;
 }
 
-.suits-img{
+.suits-img {
     width: 100%;
     padding-bottom: 56.25%;
     margin-top: -52px;
@@ -197,7 +202,8 @@ h3 {
     font-weight: 100;
 }
 
-#near, .near{
+#near,
+.near {
     width: 100%;
     font-size: 20px;
 }
@@ -236,7 +242,8 @@ h5 {
 
 }
 
-.text-center, .slide-text {
+.text-center,
+.slide-text {
     text-align: center;
     display: block;
 }
@@ -352,7 +359,7 @@ h5 {
 
 /* End of CSS for slideshow */
 
-.explore{
+.explore {
     color: #796c5c;
     text-decoration: none;
     font-size: 18px;
@@ -360,46 +367,46 @@ h5 {
     border: 1px solid #796c5c;
 }
 
-.explore:hover{
+.explore:hover {
     color: #fff;
     background-color: #796c5c;
     transition: all 0.3s ease-in;
 }
 
-.slide-text p{
+.slide-text p {
     padding-bottom: 60px;
 }
 
-figcaption{
-   color: #796c5c;
-   text-transform: capitalize; 
+figcaption {
+    color: #796c5c;
+    text-transform: capitalize;
 }
 
-.future-forecast{
+.future-forecast {
     padding: 10px;
     display: flex;
-    color: #796c5c;   
+    color: #796c5c;
     overflow-y: hidden;
 }
 
-.future-forecast .weather-forecast{
+.future-forecast .weather-forecast {
     display: flex;
     margin-left: auto;
     margin-right: auto;
 }
 
-.weather-forecast-item{
+.weather-forecast-item {
     padding: 15px 20px;
     border: 1px solid #796c5c;
     margin: 0 20px;
     align-items: center;
 }
 
-.day-title{
+.day-title {
     text-align: center;
 }
 
-.weather-forecast .weather-forecast-item{
+.weather-forecast .weather-forecast-item {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -408,7 +415,7 @@ figcaption{
     width: 130px;
 }
 
-.weather-divide{
+.weather-divide {
     width: 210px;
     margin-left: auto;
     margin-right: auto;
@@ -416,7 +423,7 @@ figcaption{
 
 .accordion__controls {
     margin: auto;
-    border-bottom: 1px solid rgba(0,0,0,.25);
+    border-bottom: 1px solid rgba(0, 0, 0, .25);
     width: 100%;
     max-width: 280px;
     list-style: none;
@@ -434,16 +441,19 @@ figcaption{
     text-align: left;
     text-transform: uppercase;
     letter-spacing: .36rem;
-    border-top: 1px solid rgba(0,0,0,.25);
+    border-top: 1px solid rgba(0, 0, 0, .25);
     text-decoration: none;
     color: #796c5c;
 }
 
-#desserts-img, #beverage-img, #dinner-img, #lunch-img{
+#desserts-img,
+#beverage-img,
+#dinner-img,
+#lunch-img {
     display: none;
 }
 
-.accordion__btn:hover{
+.accordion__btn:hover {
     cursor: pointer;
 }
 
@@ -458,23 +468,31 @@ figcaption{
 
 /* missionary services */
 
-.capacity, .capacity-size, .bed-size, .desert, .mountain{
-    display:flex;
+.capacity,
+.capacity-size,
+.bed-size,
+.desert,
+.mountain {
+    display: flex;
     align-items: center;
     margin: auto;
     width: 85%;
     padding-left: 10px;
 }
 
-.capacity-size, .bed-size, .mountain{
-    border-bottom: 1px solid rgba(0,0,0,.25);   
+.capacity-size,
+.bed-size,
+.mountain {
+    border-bottom: 1px solid rgba(0, 0, 0, .25);
 }
 
-.img-cont{
+.img-cont {
     text-align: center;
 }
 
-.capacity-suits, .capacity-suits, .capacity-views{
+.capacity-suits,
+.capacity-suits,
+.capacity-views {
     margin-left: auto;
     margin-right: auto;
     padding: 30px 0 10px 0;
@@ -484,7 +502,9 @@ figcaption{
     padding-left: 25px;
 }
 
-.single-suit, .premium-suit, .luxury-suit{
+.single-suit,
+.premium-suit,
+.luxury-suit {
     height: auto;
     padding-top: 30px;
     display: block;
@@ -492,7 +512,9 @@ figcaption{
     margin-right: auto;
 }
 
-.capacity-flex, .bed-flex, .view-flex{
+.capacity-flex,
+.bed-flex,
+.view-flex {
     margin-right: auto;
     margin-left: auto;
     width: 250px;
@@ -500,41 +522,159 @@ figcaption{
 
 /* TEMPLES PAGE */
 
-.temp-info{
+.temp-info {
     padding: 5px 25px;
 }
 
-.temp-title{
+.temp-title {
     text-align: center;
 }
 
-.heart-btn{
+.heart-btn {
     position: absolute;
     top: 18%;
     left: -3%;
-    transform: translate(-50%,-50%);
-  }
+    transform: translate(-50%, -50%);
+}
 
-  .heart{
+.heart {
     position: absolute;
     background: url(img.png) no-repeat;
     background-position: left;
     height: 90px;
     width: 90px;
-  }
+}
 
-  .heart.heart-active{
+.heart.heart-active {
     animation: animate .8s steps(28) 1;
     background-position: right;
-  }
-  @keyframes animate {
-    0%{
-      background-position: left;
+}
+
+@keyframes animate {
+    0% {
+        background-position: left;
     }
-    100%{
-      background-position: right;
+
+    100% {
+        background-position: right;
     }
-  }
+}
+
+/* RESERVATION PAGE */
+
+form {
+    margin: 0 auto;
+    padding: 1em;
+    margin-bottom: 50px;
+}
+
+#myBtn {
+    height: 35px;
+    color: white;
+    font-size: 20px;
+    border: none;
+    width: 100%;
+    background-color: #796c5c;
+}
+
+#myBtn:hover {
+    color: #796c5c;
+    background-color: transparent;
+    border: 1px solid #6B6764;
+}
+
+form label,
+form input,
+textarea,
+.level {
+    display: block;
+    width: 100%;
+    padding: 2px;
+    color: #796c5c;
+}
+
+label input {
+    display: inline;
+    width: auto;
+}
+
+.description {
+    padding: 20px 0 5px 0;
+}
+
+.container {
+    background: white;
+    border-radius: 10px;
+    width: 288px;
+}
+
+.container .inputs {
+    height: 40px;
+    width: 100%;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.container .inputs input {
+    width: 100%;
+    height: 40px;
+    border: none;
+    border-bottom: 2px solid gray;
+    outline: none;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.container .inputs input:focus {
+    border-color: #6B6764;
+}
+
+.container .inputs label {
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.container .inputs input:focus~label,
+.container .inputs input:valid~label {
+    transform: translateY(-23px);
+    color: #6B6764;
+}
+
+form label.required::after {
+    content: " *";
+    color: #6B6764;
+}
+
+#benefits,
+#benefits2,
+#benefits3,
+#benefits4 {
+    display: none;
+}
+
+.member1 {
+    color: #6B6764;
+    padding: 10px;
+}
+
+.member2 {
+    color: #6B6764;
+    padding: 10px;
+}
+
+.member3 {
+    color: #6B6764;
+    padding: 10px;
+}
+
+.reser-date{
+    display: flex;
+    text-align: center
+}
+
 /* FOOTER */
 
 .join-us {
@@ -619,8 +759,10 @@ input {
 
 
 @media only screen and (min-width: 375px) {
-    
-    .single-suit, .premium-suit, .luxury-suit{
+
+    .single-suit,
+    .premium-suit,
+    .luxury-suit {
         width: 90%;
     }
 }
@@ -632,11 +774,15 @@ input {
         width: 29vh;
     }
 
-    .capacity-flex, .bed-flex, .view-flex{
+    .capacity-flex,
+    .bed-flex,
+    .view-flex {
         width: 300px;
     }
 
-    .temp-info, h4, h5{
+    .temp-info,
+    h4,
+    h5 {
         margin-left: 20px;
     }
 }
@@ -685,16 +831,18 @@ input {
         padding-bottom: 20px;
     }
 
-    .weather-divide{
+    .weather-divide {
         width: 600px;
     }
 
-    .three-image{
+    .three-image {
         flex-wrap: wrap;
         justify-content: space-between;
     }
 
-    .imageone, .imagetwo, .imagethree{
+    .imageone,
+    .imagetwo,
+    .imagethree {
         width: 70%;
         height: auto;
         display: block;
@@ -703,76 +851,89 @@ input {
         padding: 10px;
     }
 
-    .center-img{
+    .center-img {
         width: 80%;
         height: auto;
     }
 
-    .flex-menu{
+    .flex-menu {
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
 
-    .info-text{
+    .info-text {
         width: 400px
     }
 
-    .flex-div{
+    .flex-div {
         display: grid;
         grid-template-columns: 1.5fr 1fr 1fr;
-        justify-content:center;
-        border-bottom: 1px solid rgba(0,0,0,.25);
+        justify-content: center;
+        border-bottom: 1px solid rgba(0, 0, 0, .25);
         height: 200px;
         width: 90%;
         margin-left: auto;
         margin-right: auto;
     }
 
-    .capacity-size, .bed-size, .mountain {
+    .capacity-size,
+    .bed-size,
+    .mountain {
         border-bottom: none;
     }
 
-    .capacity-flex, .bed-flex {
-        border-right: 1px solid rgba(0,0,0,.25);   
+    .capacity-flex,
+    .bed-flex {
+        border-right: 1px solid rgba(0, 0, 0, .25);
         height: 80%;
         margin-top: 20px;
         margin-left: 10px;
     }
 
-    .capacity-flex{
+    .capacity-flex {
         margin-left: 30px;
     }
 
-    .view-flex{
+    .view-flex {
         margin-top: 20px;
         margin-left: 10px;
     }
 
-    .capacity, .capacity-size, .bed-size, .desert, .mountain{
+    .capacity,
+    .capacity-size,
+    .bed-size,
+    .desert,
+    .mountain {
         padding-left: 20px;
     }
 
-    .center-img{
+    .center-img {
         width: 95%;
     }
 
     .heart-btn {
         left: 2%;
-        top:20%
+        top: 20%
     }
 
-    .temp-info, h4, h5 {
+    .temp-info,
+    h4,
+    h5 {
         margin-left: 50px;
+    }
+
+    .container{
+        width: 450px;
     }
 }
 
 @media only screen and (min-width: 1024px) {
 
-    .weather-divide{
+    .weather-divide {
         width: 780px;
     }
 
-    .capacity-flex{
+    .capacity-flex {
         margin-left: 60px;
     }
 
@@ -803,11 +964,11 @@ input {
         left: 165%;
     }
 
-    .move-left2 a{
+    .move-left2 a {
         width: 140px;
     }
 
-    .weather-divide{
+    .weather-divide {
         width: 1000px;
     }
 

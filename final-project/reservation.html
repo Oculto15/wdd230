@@ -69,74 +69,90 @@
 
         <div class="video-container">
             <iframe class="main-video" loading="lazy"
-                src="https://player.vimeo.com/video/655505076?background=1?autoplay=1"
+                src="https://player.vimeo.com/video/655543833?background=1?autoplay=1&amp;api=1&amp;player_id=vvvvimeoVideo-0"
                 data-rocket-lazyload="fitvidscompatible"
-                data-lazy-src="https://player.vimeo.com/video/655505076?background=1?autoplay=1" data-ll-status="loaded"
+                data-lazy-src="https://player.vimeo.com/video/655543833?background=1?autoplay=1" data-ll-status="loaded"
                 data-ready="true"></iframe>
         </div>
 
+        <h3>BOOK YOUR DAYS</h3>
 
-        <div>
-            <h3>WEDDING</h3>
-            <hr class="trans-divide">
-            <p class="info-text">TEMPLE INN & SUITES offers a unique wedding experience. We have a full day service with
-                a variety of food. The event is held both indoors and outdoors, using all the benefits that are
-                available.
-            </p>
-
-            <div class="text-center">
-                <a href="" class="book">BOOK</a>
+        <form class="container" method="get" action="thankyou.html">
+            <div class="inputs">
+                <input type="text" name="firstname" id="firstname" required>
+                <label for="firstname" class="required">First Name</label>
             </div>
-            <div class="text-center">
-                <hr class="stay-divide-book">
+
+            <div class="inputs">
+                <input type="text" name="middlename" id="middlename" placeholder=" " required>
+                <label for="middlename">Middle Name</label>
             </div>
-        </div>
 
-        <div class="three-image">
-            <img src="images/food1.webp" alt="" class="imageone" width="320" height="416">
-            <img src="images/food2.webp" alt="" class="imagetwo" width="320" height="416">
-            <img src="images/food3.webp" alt="" class="imagethree" width="320" height="416">
+            <div class="inputs">
+                <input type="text" name="firstname" id="lastname" required>
+                <label for="lastname" class="required">Last Name</label>
+            </div>
 
-        </div>
 
-        <div class="menu">
-            <h3>OUR MENUS</h3>
-            <p class="info-text">The ingredients in our menus are sourced from local farms in communities
-                surrounding Okpu, with the intention of bringing seasonal, fresh flavors to the table.
-            </p>
-            <div class="flex-menu">
-                <div class="accordion__controls">
-                    <div class="accordion__item" id="breakfast">
-                        <p class="accordion__btn">Breakfast</p>
+            <div class="inputs">
+                <input type="email" name="email" id="email" required>
+                <label for="email" class="required">Email (example@email.com)</label>
+            </div>
+
+            <div class="inputs">
+                <input type="tel" name="phone" id="phone" pattern="\d{3}-\d{3}-\d{4}" required>
+                <label for="phone" class="required">Phone number (555-555-5555):</label>
+            </div>
+
+            <div class="reser-date">
+                <div class="inputs checkin">
+                    <label for="chechin">Chechk In</label><br>
+                    <input type="date" name="chechin" id="chechin" required>
+                
+                </div>
+    
+                <div class="inputs checkout">
+                    <label for="chechout">Check Out</label><br>
+                    <input type="date" name="chechout" id="chechout" required>
+                </div>
+            </div> <br>
+
+
+            <div class="side">
+                <p class="level">Choose Room</p>
+                <label>
+                    <input type="radio" id="np" name="status" value="1">
+                    Double
+                </label>
+                <label>
+                    <input type="radio" id="bronze" name="status" value="2">
+                    Premium
+                </label>
+                <label>
+                    <input type="radio" id="silver" name="status" value="3">
+                    Luxury
+                </label>
+                <br>
+
+                <div id="group1">
+                    <div id="benefits">
+                        <p class="member1">2 Persons $150 Cost per night <br>4 Persons $250 Cost per night <br>6 Persons $350 Cost per night <br>Free access to our services</p>
                     </div>
-                    <div class="accordion__item" id="lunch">
-                        <p class="accordion__btn">Lunch</p>
+                    <div id="benefits2">
+                        <p class="member2">2 Persons $300 Cost per night <br>4 Persons $400 Cost per night <br>6 Persons $500 Cost per night <br>Free access to our services
+                        </p>
                     </div>
-                    <div class="accordion__item" id="dinner">
-                        <p class="accordion__btn">Dinner</p>
-                    </div>
-                    <div class="accordion__item" id="beverage">
-                        <p class="accordion__btn">Beverages</p>
-                    </div>
-                    <div class="accordion__item" id="desserts">
-                        <p class="accordion__btn">Desserts</p>
+                    <div id="benefits3">
+                        <p class="member3">2 Persons $450 Cost per night <br>4 Persons $550 Cost per night <br>6 Persons $650 Cost per night <br>8 Persons $750 Cost per night <br>Free access to our services
                     </div>
                 </div>
-
-                <div class="menu-img">
-                    <img class="center-img" id="breakfast-img" src="images/breakfast.webp" alt="" width="320"
-                        height="416">
-                    <img class="center-img" id="lunch-img" src="images/lunch.webp" alt="" width="320" height="416">
-                    <img class="center-img" id="dinner-img" src="images/dinner.webp" alt="" width="320" height="416">
-                    <img class="center-img" id="beverage-img" src="images/beverages.webp" alt="" width="320"
-                        height="416">
-                    <img class="center-img" id="desserts-img" src="images/desserts.webp" alt="" width="320"
-                        height="416">
-                </div>
             </div>
+            <br>
 
+            <input type="hidden" name="visit-date" id="visit-date" value="0">
 
-        </div>
+            <input type="submit" value="Submit" id="myBtn">
+        </form>
 
 
     </main>
@@ -144,8 +160,8 @@
     <footer>
         <div class="join-us">
             <h2 class="join">JOIN OUR FAMILY</h2>
-            <label for="email"></label>
-            <input type="email" placeholder="SIGN UP FOR EMAIL UPDATES" id="email" name="email">
+            <label for="e-email"></label>
+            <input type="email" placeholder="SIGN UP FOR EMAIL UPDATES" id="e-email" name="e-email">
             <div class="text-center">
                 <button class="join-button">JOIN US</button>
             </div>
@@ -170,9 +186,8 @@
         </div>
     </footer>
 
-
-    <script src="js/menu.js"></script>
     <script src="js/script.js"></script>
+    <script src="js/join.js"></script>
 </body>
 
 </html>
