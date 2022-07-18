@@ -38,7 +38,7 @@
                         <li class="dropdown"><input type="checkbox" id="services">
                             <label for="services" class="dropbtn"> Services ▼</label>
                             <ul class="dropdown-content">
-                                <li><a href="#">Amenities</a></li>
+                                <li><a href="suites.html">Amenities</a></li>
                                 <li><a href="suites.html">Suites</a></li>
                                 <li><a href="reception.html">Reception</a></li>
                             </ul>
@@ -68,80 +68,21 @@
     </header>
 
     <main>
+        
+        <section class="temp-cards">
+            <h3 id="near">NEAR TEMPLES</h3>
 
+            <div class="temp-div">
 
+                <div class="heart-btn">
+                    <div class="content">
+                        <span class="heart"></span>
 
-        <div class="video-container">
-            <iframe class="main-video" loading="lazy"
-                src="https://player.vimeo.com/video/655505076?background=1?autoplay=1"
-                data-rocket-lazyload="fitvidscompatible"
-                data-lazy-src="https://player.vimeo.com/video/655505076?background=1?autoplay=1" data-ll-status="loaded"
-                data-ready="true"></iframe>
-        </div>
-
-
-        <div>
-            <h3>WEDDING</h3>
-            <hr class="trans-divide">
-            <p class="info-text">TEMPLE INN & SUITES offers a unique wedding experience. We have a full day service with
-                a variety of food. The event is held both indoors and outdoors, using all the benefits that are
-                available.
-            </p>
-
-            <div class="text-center">
-                <a href="" class="book">BOOK</a>
-            </div>
-            <div class="text-center">
-                <hr class="stay-divide-book">
-            </div>
-        </div>
-
-        <div class="three-image">
-            <img src="images/food1.webp" alt="" class="imageone" width="320" height="416">
-            <img src="images/food2.webp" alt="" class="imagetwo" width="320" height="416">
-            <img src="images/food3.webp" alt="" class="imagethree" width="320" height="416">
-
-        </div>
-
-        <div class="menu">
-            <h3>OUR MENUS</h3>
-            <p class="info-text">The ingredients in our menus are sourced from local farms in communities
-                surrounding Okpu, with the intention of bringing seasonal, fresh flavors to the table.
-            </p>
-            <div class="flex-menu">
-                <div class="accordion__controls">
-                    <div class="accordion__item" id="breakfast">
-                        <p class="accordion__btn">Breakfast</p>
-                    </div>
-                    <div class="accordion__item" id="lunch">
-                        <p class="accordion__btn">Lunch</p>
-                    </div>
-                    <div class="accordion__item" id="dinner">
-                        <p class="accordion__btn">Dinner</p>
-                    </div>
-                    <div class="accordion__item" id="beverage">
-                        <p class="accordion__btn">Beverages</p>
-                    </div>
-                    <div class="accordion__item" id="desserts">
-                        <p class="accordion__btn">Desserts</p>
                     </div>
                 </div>
 
-                <div class="menu-img">
-                    <img class="center-img" id="breakfast-img" src="images/breakfast.webp" alt="" width="320"
-                        height="416">
-                    <img class="center-img" id="lunch-img" src="images/lunch.webp" alt="" width="320" height="416">
-                    <img class="center-img" id="dinner-img" src="images/dinner.webp" alt="" width="320" height="416">
-                    <img class="center-img" id="beverage-img" src="images/beverages.webp" alt="" width="320"
-                        height="416">
-                    <img class="center-img" id="desserts-img" src="images/desserts.webp" alt="" width="320"
-                        height="416">
-                </div>
             </div>
-
-
-        </div>
-
+        </section>
 
     </main>
 
@@ -175,8 +116,19 @@
     </footer>
 
 
-    <script src="js/menu.js"></script>
     <script src="js/script.js"></script>
+    <script src="js/temples.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.content').click(function () {
+                $('.content').toggleClass("heart-active")
+                $('.text').toggleClass("heart-active")
+                $('.numb').toggleClass("heart-active")
+                $('.heart').toggleClass("heart-active")
+            });
+        });
+    </script>
 </body>
 
 </html>

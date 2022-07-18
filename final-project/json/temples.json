@@ -1,0 +1,111 @@
+{
+    "temples": [{
+            "templeName": "ABA NIGERIA TEMPLE",
+            "templeImg": "images/aba-nigeria-temple.webp",
+            "width":"300",
+            "height":"200",
+            "like": "../css/img.png",
+            "describe": "ABA NIGERIA TEMPLE",
+            "address": "453116 Okpolor Umuobu Street, 453116, Aba, Nigeria",
+            "phoneNumber": "+234 813 151 6723",
+            "services": [
+                "Patron housing available"
+            ],
+            "schedule": "Visit lds.org to make an appointment",
+            "closure2022": ["20 August 2022", 
+                " 5 September 2022 - 2 January 2023",
+                "",
+                ""
+            ],
+            "closure2023": ["6 March 2023 - 20 March 2023",
+                " 19 August 2023",
+                " 4 September 2023 - 18 September 2023",
+                " 7 October 2023"
+            ],
+            "templeHistory": "The Aba Nigeria Temple was the first temple built in Nigeria, the second built in West Africa, and the third built in Africa, following the Johannesburg South Africa Temple (1985) and Accra Ghana Temple (2004). President Gordon B. Hinckley dedicated the Aba Nigeria Temple during a worldwide tour that included visits to Anchorage, Alaska; Vladivostok, Russia; Seoul, South Korea; Taipei, Taiwan; Hong Kong, China; New Delhi, India; Nairobi, Kenya; and finally Aba, Nigeria. His first view of the temple was from a helicopter in a flyover of the site."
+        },
+
+        {
+            "templeName": "ACCRA GHANA TEMPLE",
+            "templeImg": "images/accra-ghana-temple.webp",
+            "width":"300",
+            "height":"200",
+            "like": "",
+            "describe":"ACCRA GHANA TEMPLE",
+            "address": "209 P.M, 57 Independence Ave, B. CT, Accra, Ghana",
+            "phoneNumber": "+233 30 265 0123",
+            "services": [
+                "Patron housing available"
+            ],
+            "schedule": "Visit lds.org to make an appointment",
+            "closure2022": ["20 August 2022",
+                " 13 September 2022 - 6 September 2022",
+                " 25 December 2022 - 26 December 2022",
+                ""
+            ],
+            "closure2023": ["7 January 2023",
+                " 13 March 2023 - 27 March 2023",
+                " 11 September 2023 - 25 September 2023",
+                ""
+            ],
+            "templeHistory": "The Accra Ghana Temple was the first temple built in West Africa and the second built in Africa, following the Johannesburg South Africa Temple (1985). The first Missionary Training Center in Africa opened in Tema, Ghana (just east of Accra) in 2002. The tradition of holding a youth cultural celebration before the dedication of a temple began with the dedication of the Accra Ghana Temple at the request of President Gordon B. Hinckley."
+        },
+
+        {
+            "templeName": "ABIDJAN IVORY COAST TEMPLE",
+            "templeImg": "images/abidjanc-ivory-coast.webp",
+            "width":"300",
+            "height":"200",
+            "like": "",
+            "describe":"ABIDJAN IVORY COAST TEMPLE",
+            "address": "Ilot 118 Riviera, Abidjan, Côte d’Ivoire",
+            "phoneNumber": "+233 45 285 4623",
+            "services": [
+                "Clothing rental available"
+            ],
+            "schedule": "Visit lds.org to make an appointment",
+            "closure2022": [
+                " 24 November 2022",
+                " 31 December 2022",
+                "",
+                ""
+            ],
+            "closure2023": ["24 January 2023 - 6 February 2023",
+                " 30 December 2023",
+                "",
+                ""
+            ],
+            "templeHistory": "The Abidjan Ivory Coast Temple will be constructed on the site of the stake center for the Cocody Cote d'Ivoire Stake in the commune of Cocody, known for its beautiful residential districts."
+        },
+
+        {
+            "templeName": "FREETOWN SIERRA LEONE TEMPLE",
+            "templeImg": "images/freetown-sierra-leone.webp",
+            "width":"300",
+            "height":"200",
+            "like": "",
+            "describe":"FREETOWN SIERRA LEONE TEMPLE",
+            "address": "9VP6+XGJ, Jui Road, Kossah Town, FreetSierra Leone, Hastings, Sierra Leone",
+            "phoneNumber": "+232 79 474 047",
+            "services": [
+                "Clothing rental available"
+            ],
+            "schedule": "Visit lds.org to make an appointment",
+            "closure2022": ["23 July 2022",
+                " 31 December 2022",
+                "",
+                ""
+            ],
+            "closure2023": [
+                " 4 July 2023",
+                " 23 November 2023 - 24 November 2023",
+                "",
+                ""
+            ],
+            "templeHistory": "Sierra Leone's first temple was announced by President Russell M. Nelson at the General Women's Session of the 189th Semiannual General Conference. There are more than 21,000 Latter-day Saints organized into six stakes and three districts in this West African nation."
+        }
+
+
+
+    ]
+}

@@ -16,6 +16,8 @@ body {
 h1,
 h2,
 h3,
+h4,
+h5,
 p {
     color: #796c5c;
 }
@@ -52,13 +54,9 @@ p {
 }
 
 .middle-division ul {
-    align-items: center;
     list-style-type: none;
 }
 
-.middle-division ul li {
-    padding: 0 7px;
-}
 
 .middle-division ul li a, .dropbtn {
     color: rgba(255, 255, 255, .65);
@@ -123,6 +121,7 @@ nav {
     padding: 0.75rem;
     text-align: left;
     text-decoration: none;
+    
 }
 
 .responsive li {
@@ -197,6 +196,28 @@ h3 {
     letter-spacing: 2px;
     font-weight: 100;
 }
+
+#near, .near{
+    width: 100%;
+    font-size: 20px;
+}
+
+h4 {
+    font-size: 19px;
+    padding: 35px 0 10px 20px;
+    letter-spacing: 2px;
+    font-weight: 100;
+    text-transform: uppercase;
+}
+
+h5 {
+    font-size: 16px;
+    padding: 15px 0 5px 20px;
+    letter-spacing: 2px;
+    font-weight: 100;
+    text-transform: uppercase;
+}
+
 
 .info-text {
     width: 235px;
@@ -431,6 +452,8 @@ figcaption{
     margin-left: auto;
     margin-right: auto;
     padding-top: 30px;
+    width: 95%;
+    height: auto;
 }
 
 /* missionary services */
@@ -475,6 +498,43 @@ figcaption{
     width: 250px;
 }
 
+/* TEMPLES PAGE */
+
+.temp-info{
+    padding: 5px 25px;
+}
+
+.temp-title{
+    text-align: center;
+}
+
+.heart-btn{
+    position: absolute;
+    top: 18%;
+    left: -3%;
+    transform: translate(-50%,-50%);
+  }
+
+  .heart{
+    position: absolute;
+    background: url(img.png) no-repeat;
+    background-position: left;
+    height: 90px;
+    width: 90px;
+  }
+
+  .heart.heart-active{
+    animation: animate .8s steps(28) 1;
+    background-position: right;
+  }
+  @keyframes animate {
+    0%{
+      background-position: left;
+    }
+    100%{
+      background-position: right;
+    }
+  }
 /* FOOTER */
 
 .join-us {
@@ -574,6 +634,10 @@ input {
 
     .capacity-flex, .bed-flex, .view-flex{
         width: 300px;
+    }
+
+    .temp-info, h4, h5{
+        margin-left: 20px;
     }
 }
 
@@ -688,6 +752,18 @@ input {
         padding-left: 20px;
     }
 
+    .center-img{
+        width: 95%;
+    }
+
+    .heart-btn {
+        left: 2%;
+        top:20%
+    }
+
+    .temp-info, h4, h5 {
+        margin-left: 50px;
+    }
 }
 
 @media only screen and (min-width: 1024px) {
@@ -699,6 +775,7 @@ input {
     .capacity-flex{
         margin-left: 60px;
     }
+
 }
 
 @media only screen and (min-width: 1100px) {
@@ -714,10 +791,6 @@ input {
 
     .navigation a {
         text-align: center;
-    }
-
-    .navigation li:first-child {
-        display: none;
     }
 
     .move-left {
@@ -736,5 +809,10 @@ input {
 
     .weather-divide{
         width: 1000px;
+    }
+
+    .heart-btn {
+        top: 16%;
+        left: 4%;
     }
 }
